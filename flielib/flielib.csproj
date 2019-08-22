@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="htmlStudy\HTML\css\style.css" />
     <Content Include="htmlStudy\HTML\HTML标签说明.html" />
     <Content Include="htmlStudy\HTML\img\1.png" />
     <Content Include="htmlStudy\HTML\img\2.png" />
