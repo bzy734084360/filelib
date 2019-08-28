@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<style type="text/css">
+	h1{color:red;text-align:center}
+	p{color:green;font-size:20px;}
+	.cities {
+    background-color:black;
+    color:white;
+    margin:20px;
+    padding:20px;
+} 
+		</style>
+		<!-- base -->
+		<base target="_blank"/>
+		<!--HTML头部元素-->
+		<title>GrumpyFish</title>
+		<!-- 使用外部样式表-->
+		<link rel="stylesheet" type="text/css"
+		href="./css/style.css"/>
+		<!-- 下列元素不明确意义-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf - 8" />
+		<meta http-equiv="Content-Language" content="zh-cn" />
+		<!--常用于页面搜索关键词 -->
+		<meta name="keywords"
+content="HTML, DHTML, CSS, XML, XHTML, JavaScript, VBScript"/>
+		<meta name="description" content="FishGrumpy"/>
+	</head>
+	<body background="./img/timg.jpg">
+		<!-- 注释 -->
+		<!--HTML元素 -->
+		<!--HTML标题 -->
+		<!--HTML属性 align、bgcolor  应避免使用这些属性-->
+		<!-- HTML样式 style -->
+		<a name="top"/>
+		<a href="#down" style="display:block; text-align:right">底部</a>
+		<div id="html元素" >
+			<h1 style="text-align:center">HTML元素</h1>
+			<h1 align="center">h1元素 标题元素 居中属性</h1>
+			<h2>h2元素 标题元素</h2>
+			<h3>h3元素 标题元素</h3>
+			<h4>h4元素 标题元素</h4>
+			<h5>h5元素 标题元素</h5>
+			<h6>h6元素 标题元素</h6>
+			<br>br元素 空行</br>
+			<hr>hr元素  分割线</hr>
+			<!--HTML段落 -->
+			<h1 style="text-align:center">HTML段落</h1>
+			<p>p标签 段落</p>
+			<p align="center">p元素 换行<br/> 第二行</p>
+			<p style="font-family:verdana;color:red;text-align:center">
+			春眠不觉晓
+				处处闻啼鸟
+					夜来风雨声
+						花落知多少
+			</p>
+			<p style="font-family:times;color:green; font-size:40px">此处省略了多余的空格和换行</p>
+			<hr/>
+		</div>
+		<div id="html链接" >
+			<h1 style="text-align:center">HTML链接</h1>
+			<a href="http://www.baidu.com/">a元素 链接 百度一下</a>
+			<hr/>
+		</div>
+		<div id="html图片">
+			<h1 style="text-align:center">HTML图片</h1>
+			<p>来自文件夹的图像:<img src="./img/1.png" width="100" height="100" >img图片元素</img>
+			</p>
+			<br/>
+			<p>来自网页的图像：<img src="http://www.w3school.com.cn/i/w3school_logo_white.gif"/>
+			</p>
+			<a href="http://www.baidu.com/" target="_blank">
+				<img src="./img/2.png" border="0"/>
+			</a>
+			<br/>
+			<img src="ss" alt ="加载图片失败" />
+			<hr/>
+		</div>
+		<div id="html文本格式化">
+			<h1 style="text-align:center">HTML文本格式化</h1>
+			<!-- HTML文本格式化：开始-->
+			<b>文本格式化：b元素 定义粗体文本</b>
+			<br/>
+			<big>文本格式化：big元素 定义大字号</big>
+			<br/>
+			<em>文本格式化：em元素 定义着重文字</em>
+			<br/>
+			<i>文本格式化：i元素 定义斜体字</i>
+			<br/>
+			<small>文本格式化：small元素 定义小号字</small>
+			<br/>
+			<strong>文本格式化：strong元素 定义加重语气</strong>
+			<br/>
+			<sub>文本格式化：sub元素 定义下标字</sub>
+			<br/>
+			<sup>文本格式化：sup元素 定义上标字</sup>
+			<br/>
+			<ins>文本格式化：ins元素 定义插入字</ins>
+			<br/>
+			<del>文本格式化：del元素 定义删除字</del>
+			<!-- HTML文本格式化：结束-->
+			<hr/>
+		</div>
+		<div id="html计算机输出标签">
+			<h1 style="text-align:center">HTML计算机输出标签</h1>
+			<!-- HTML计算机输出标签：开始-->
+			<code>计算机输出：code元素 定义计算机代码 不保留多余的空格和拆行</code>
+			<br/>
+			<code>var person = { firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue" }</code>
+			<br/>
+			<kbd>计算机输出：kbd元素 定义键盘码  </kbd>
+			<p>
+				<kbd>File | Open...</kbd>
+			</p>
+			<br/>
+			<samp>计算机输出：samp元素 定义计算机代码样本</samp>
+			<br/>
+			<tt>计算机输出：tt元素	定义打字机代码</tt>
+			<br/>
+			<var>计算机输出：var元素	定义变量</var>
+			<p>var元素定义数学变量</p>
+			<p>
+				<var>E = m c<sup>2</sup>
+				</var>
+			</p>
+			<br/>
+			<pre>计算机输出：pre元素	定义预格式文本</pre>
+			<pre style="font-family:verdana;color:red;text-align:left">
+			春眠不觉晓
+				处处闻啼鸟
+					夜来风雨声
+						花落知多少
+			</pre>
+			<hr/>
+		</div>
+		<div id="html引用和术语定义">
+			<h1 style="text-align:center">HTML 引用、引用和术语定义</h1>
+			<p>引用、引用和术语定义：abbr元素  定义缩写->
+				<abbr title="test">t</abbr>
+			光标移到缩写上将会显示全称
+			</p>
+			<br/>
+			<acronym>引用、引用和术语定义:acronym 元素	定义首字母缩写AB</acronym>
+			<br/>
+			<acronym title="Study Every Day">SED</acronym>
+			<br/>
+			<address>引用、引用和术语定义:address 元素 定义地址 
+				<br/>
+		搜索:<a href="http://www.baidu.com/">百度一下</a>
+			</address>
+			<address>这是一个无下划线的链接 
+				<br/>
+		搜索:<a href="http://www.baidu.com/" style="text-decoration:none">百度一下</a>
+			</address>
+			<br/>
+			<bdo dir="rtl" >引用、引用和术语定义:bdo 元素 定义文字方向</bdo>
+			<br/>
+			<blockquote cite="">引用、引用和术语定义:blockquote 元素 定义长的引用
+		一般会对blockquote元素进行缩进处理。
+		比如这一行的内容超过上一行的内容长度则会缩进
+			</blockquote>
+			<br/>
+			<q>引用、引用和术语定义：q	元素	定义短的引用语</q>
+			<br/>
+			<cite>引用、引用和术语定义：cite 元素	定义引用、引证</cite>
+			<br/>
+			<dfn>引用、引用和术语定义：dfn 元素 定义一个定义项目</dfn>
+			<p>
+		 The <dfn title="World Health Organization">WHO</dfn>
+		  was founded in 1948.
+			</p>
+			<p>对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息</p>
+			<br/>
+			<p>
+				<dfn>
+					<abbr title="World Health Organization">WHO</abbr> 成立于1948年</dfn>
+			</p>
+			<!-- HTML引用、引用和术语定义：结束-->
+			<hr/>
+		</div>
+		<div id="htmlCSS">
+			<h1 style="text-align:center">HTML CSS</h1>
+			<p>head 中设定指定的内部样式表</p>
+			<br/>
+			<hr/>
+		</div>
+		<div id="html图像">
+			<h1 style="text-align:center">HTML图像</h1>
+			<p>背景图片设置：body:background;当前以在css中设置</p>
+			<h2>未设置对齐方式的图像</h2>
+			<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif" /> 在文本中</p>
+			<h2>已设置对齐方式的图像</h2>
+			<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif " align="bottom" /> 在文本中</p>
+			<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif " align="middle" /> 在文本中</p>
+			<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif " align="top" /> 在文本中</p>
+			<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif " align="right" /> 在文本中</p>
+			<p>图像 <img src="http://www.w3school.com.cn/i/eg_cute.gif " align="left" /> 在文本中</p>
+			<br/>
+			<h2>创建图像映射</h2>
+			<img src="http://www.w3school.com.cn/i/eg_planets.jpg"
+			border="0" usemap="#planetmap"
+			alt="Planets"/>
+			<map name="planetmap" id="planetmap">
+				<area shape="circle"
+			coords="180,139,14"
+			href="http://www.w3school.com.cn/example/html/venus.html"
+			target="_blank"
+			alt="Venus"/>
+				<area shape="circle"
+			coords="129,161,10"
+			href="http://www.w3school.com.cn/example/html/mercur.html"
+			target="_blank"
+			alt="Mercury"/>
+				<area shape="rect"
+			coords="0,0,110,260"
+			href="http://www.w3school.com.cn/example/html/sun.html"
+			target="_blank"
+			alt="Sun"/>
+			</map>
+			<h2>把图像转换为图像映射|暂未实例！</h2>
+			<hr/>
+		</div>
+		<div id="html表格">
+			<h1 style="text-align:center">HTML表格</h1>
+			<p>表格</p>
+			<p>每个表格由table标签开始</p>
+			<p>每个表格行由tr标签开始</p>
+			<p>每个表格数据由td标签开始</p>
+			<h4>一列</h4>
+			<table border="2">
+				<caption>一列</caption>
+				<th>ID</th>
+				<tr>
+					<td>20</td>
+				</tr>
+			</table>
+			<h4>一行三列</h4>
+			<table border="1">
+				<caption>一行三列</caption>
+				<th>ID</th>
+				<th>Code</th>
+				<th>IDCode</th>
+				<tr>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+				</tr>
+			</table>
+			<h4>二行三列</h4>
+			<table border="1">
+				<caption>二行三列</caption>
+				<th>ID</th>
+				<th>Code</th>
+				<th>IDCode</th>
+				<tr>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td/>
+					<td>25</td>
+				</tr>
+			</table>
+			<h4>垂直表头</h4>
+			<table border="1">
+				<caption>垂直表头</caption>
+				<th>姓名</th>
+				<th colspan="2">Name</th>
+				<tr>
+					<th rowspan="2">电话</th>
+					<td>21</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td/>
+				</tr>
+			</table>
+			<table border="1">
+				<caption>表格内的标签</caption>
+				<tr>
+					<td>
+						<p>这是一个段落</p>
+						<p>这是另一个段落</p>
+					</td>
+					<td>这个单元格包含了一个表格
+						<table border="1">
+							<tr>
+								<td>A</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>C</td>
+								<td>D</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>这个单元包含一个列表
+						<ul>
+							<li>苹果</li>
+							<li>西瓜</li>
+							<li>香蕉</li>
+						</ul>
+					</td>
+					<td>
+						<a href="http://www.baidu.com" target="_blank" >百度一下</a>
+					</td>
+				</tr>
+			</table>
+			<table border="1">
+				<caption>无单元格边距</caption>
+				<tr >
+					<td >a</td>
+					<td >b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1" cellpadding="20">
+				<caption>单元格边距cellpadding</caption>
+				<tr >
+					<td >a</td>
+					<td >b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1">
+				<caption>无单元格间距</caption>
+				<tr >
+					<td >a</td>
+					<td >b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1" cellspacing="20">
+				<caption>单元格间距cellspacing</caption>
+				<tr >
+					<td >a</td>
+					<td >b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1" bgcolor="red" cellpadding="20">
+				<caption>表格添加背景颜色</caption>
+				<tr >
+					<td >a</td>
+					<td >b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1" background="./img/2.png" cellpadding="20">
+				<caption>表格添加背景图片</caption>
+				<tr >
+					<td >a</td>
+					<td >b</td>
+				</tr>
+				<tr>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1"cellpadding="20">
+				<caption>表格单元添加背景</caption>
+				<tr>
+					<td bgcolor="green">a</td>
+					<td>b</td>
+				</tr>
+				<tr>
+					<td background="./img/2.png">c</td>
+					<td>d</td>
+				</tr>
+			</table>
+			<table border="1"cellpadding="0" width="200">
+				<caption>表格单元内容排列</caption>
+				<tr>
+					<td bgcolor="green" align="left">a</td>
+					<td align="left">b</td>
+				</tr>
+				<tr>
+					<td background="./img/2.png" align="left">c</td>
+					<td align="right">d</td>
+				</tr>
+			</table>
+			<br/>
+			<hr/>
+		</div>
+		<div id="html列表">
+			<h1 style="text-align:center">HTML列表</h1>
+			<h4>定义无序列表</h4>
+			<ul>
+				<li>咖啡</li>
+				<li>茶</li>
+				<li>牛奶</li>
+			</ul>
+			<h4>定义有序列表</h4>
+			<ol>
+				<li>咖啡</li>
+				<li>茶</li>
+				<li>牛奶</li>
+			</ol>
+			<hr/>
+		</div>
+		<div id="html块">
+			<h1 style="text-align:center">HTML 块~ div span </h1>
+			<h2>·div</h2>
+			<div style="color:#00FF00">
+				<h2> this is  h2 </h2>
+				<p>this is p</p>
+			</div>
+			<h2>·span</h2>
+			<p class="tip">
+				<span>提示：</span>... ... ...</p>
+			<p class="tip2">
+				<span>提示：</span>... ... ...</p>
+			<hr/>
+		</div>
+		<div id="html类">
+			<h1>HTML 类</h1>
+			<div class="cities">
+				<h2>测试class类</h2>
+				<p>测试内容测试内容测试内容测试内容测试内容测试内容
+					测试内容测试内容测试内容测试内容测试内容测试内容
+				</p>
+			</div>
+			<hr/>
+		</div>
+		<div id="html布局">
+			<h1>HTML 布局</h1>
+			<a href="./overall.html" target="_blank" style="text-decoration:none">布局页面链接</a>
+			<br/>
+			<a href="./overallByH5.html" target="_blank" style="text-decoration:none">H5布局页面链接</a>
+			<hr/>
+		</div>
+		<div id="html响应式设计">
+			<h1>HTML 响应式设计</h1>
+			<hr/>
+		</div>
+		<div id="html框架">
+			<h1>HTML 框架</h1>
+			<a href="./frame.html" target="_blank" style="text-decoration:none">框架页面</a>
+			<br/>
+			<p>导航框架</p>
+			<a href="./navi.html" target="_blank" style="text-decoration:none">导航框架</a>
+			<hr/>
+		</div>
+		<div id="html内联框架">
+			<h1>HTML 内联框架</h1>
+			<iframe src="./navi.html" height="200" frameborder="0" name="iframe_a">
+			</iframe>
+
+			<p>
+				<a href="./HTML.html" target="iframe_a">
+		HTML
+				</a>
+			</p>
+			<hr/>
+		</div>
+		<div id="html脚本">
+			<h1>HTML脚本</h1>
+			<script type="text/javascript">
+		document.write("<p>Hello World</p>")
+			</script>
+
+			<hr/>
+		</div>
+		<div id="html头部元素">
+			<h1>HTML 头部元素</h1>
+			<p>重定向用户链接：<a href="./redirect.html">GrumpyFish</a>
+			</p>
+			<hr/>
+		</div>
+		<div id="html表单">
+			<h1>HTML表单</h1>
+			<ol>
+				<li>文本输入 <br/>
+					<form>
+		First name:<br/>
+						<input type="text" name="firstname"/>
+						<br/>
+		Last name:<br/>
+						<input type="text" name="lastname"/>
+					</form>
+				</li>
+				<li> 单选按钮输入<br/>
+					<form>
+						<input type="radio" name="sex" value="male" checked />
+				Male <br/>
+						<input type="radio" name="sex" value="female" checked />
+				Female
+					</form>
+				</li>
+				<li>提交按钮<br/>
+					<form action="./overall.html">
+						<fieldset >
+							<legend>提交按钮</legend>
+				First name:<br/>
+							<input type="text" name="firstname" value="Mickey"/>
+							<br/>
+				Last name:<br/>
+							<input type="text" name="lastname" value="Mouse"/>
+							<br/>
+							<input type="submit" value="Submit"/>
+						</fieldset>
+					</form>
+				</li>
+				<li>
+				下拉列表<br/>
+					<select name="cars">
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi" selected>Audi</option>
+					</select>
+				</li>
+				<li>定义多行输入字段（文本域）<br/>
+					<textarea name="message" rows="20" cols="30">请输入文本内容</textarea>
+				</li>
+				<li>
+					定义可点击按钮<br/>
+					<button type="button" onclick="alert('Hello World!')">点击我</button>
+				</li>
+			</ol>
+			<br/>
+		</div>
+		<br/>
+		<a name="down"/>
+		<a href="#top" style="display:block;text-align:right">顶部</a>
+	</body>
+</html>

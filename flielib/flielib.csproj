@@ -67,12 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="htmlStudy\HTML\css\overall.css" />
+    <Content Include="htmlStudy\HTML\css\overallH5.css" />
     <Content Include="htmlStudy\HTML\css\style.css" />
-    <Content Include="htmlStudy\HTML\HTML标签说明.html" />
+    <Content Include="htmlStudy\HTML\frame.html" />
+    <Content Include="htmlStudy\HTML\HTML.html" />
     <Content Include="htmlStudy\HTML\img\1.png" />
     <Content Include="htmlStudy\HTML\img\2.png" />
     <Content Include="htmlStudy\HTML\img\3.gif" />
     <Content Include="htmlStudy\HTML\img\4.gif" />
+    <Content Include="htmlStudy\HTML\img\5.jpg" />
+    <Content Include="htmlStudy\HTML\img\back.png" />
+    <Content Include="htmlStudy\HTML\img\timg.jpg" />
+    <Content Include="htmlStudy\HTML\js.html" />
+    <Content Include="htmlStudy\HTML\navi.html" />
+    <Content Include="htmlStudy\HTML\naviLi.html" />
+    <Content Include="htmlStudy\HTML\overall.html" />
+    <Content Include="htmlStudy\HTML\overallByH5.html" />
+    <Content Include="htmlStudy\HTML\redirect.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -7,3 +7,12 @@ body {
   color: #666666;
 background-image:url(../img/timg.jpg);
 }
+
+p.tip span {
+	font-weight:bold;
+	color:#ff9955;
+	}
+p.tip2 span{
+	font-weiight:bold;
+	color:#ff7895
+	}
