@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        h2 {
+            font-family: Georgia, serif
+        }
+    </style>
+    <script>function malfunction() {
+        document.getElementById("demo2").innerHTML = "这是HEAD种修改的P标签";
+    }
+
+    </script>
+</head>
+<body>
+<a name="top"/>
+<a href="#down" style="display:block;text-align:center">底部</a>
+<div name="第一段JavaScript">
+    <h1 style=text-align:center>第一段JavaScript</h1>
+    <h2>Body 中的 JavaScript</h2>
+    <p id="demo"/>
+    <script>document.getElementById("demo").innerHTML = " 我的第一段JavaScript"</script>
+</div>
+<hr/>
+<div name="JavaScript函数和事件">
+    <h1 style=text-align:center>JavaScript函数和事件</h1>
+    <h2>Head标签中的javascript函数</h2>
+    <p id="demo2">这是一个段落</p>
+    <button type="button" onclick="malfunction()">试一试</button>
+    <h2>Body标签中的JavaScript函数</h2>
+    <p id="demo3">这是一个段落</p>
+    <button type="button" onclick="malfunction2()">试一试</button>
+    <h2>外部的JavaScript函数</h2>
+    <p id="demo4">这是一个段落</p>
+    <button type="button" onclick="myFunction4()">试一试</button>
+    <script src="./js/myScript.js">
+    </script>
+</div>
+<hr/>
+<div name="js输出">
+    <h1 style=text-align:center>JS四种输出方式</h1>
+    <h2>InnerHTML写入HTML元素中</h2>
+    <p id="output1"/>
+    <h2>使用document.write()</h2>
+    <script>
+        document.write(5 + 6);
+    </script>
+    <h2>使用window.alert()</h2>
+    <p>弹窗已注释</p>
+    <script>
+        <!-- window.alert(5+6); -->
+    </script>
+    <h2>使用console.log()</h2>
+    <p>F12查看控制台输出</p>
+</div>
+<hr/>
+<div name="js语句">
+    <h1>JS语句</h1>
+    <h2>在HTML中JS语句是由web浏览器“执行”的“指令”</h2>
+    <p id="demo5"/>
+</div>
+<hr/>
+<div name="js数据类型">
+    <h1>JS数据类型</h1>
+    <h2>布尔类型</h2>
+    <p id="demo6"/>
+    <h2>数组</h2>
+    <p id="demo7"/>
+    <h2>对象</h2>
+    <p id="demo8"/>
+    <h2>typeof</h2>
+    <p id="demo9"/>
+</div>
+<hr/>
+<div name="js函数">
+    <h1>JS函数</h1>
+    <p>执行计算的函数,2*3的结果：</p>
+    <p id="demo10"/>
+    <p>不使用()访问函数则会返回函数的声明</p>
+    <p id="demo11"/>
+</div>
+<hr/>
+<div name="js对象">
+    <h1>js对象</h1>
+</div>
+<hr/>
+<div name="JS事件">
+    <h1>JS事件</h1>
+    <h2>JS事件显示当前时间</h2>
+    <button onclick="myFunction6()">时间是？</button>
+    <p id="demo12"/>
+</div>
+<hr/>
+<div name="JS字符串">
+    <h1>JS字符串</h1>
+    <h2>字符串长度</h2>
+    <p>"AAA"的字符长度为：<a id="demo13"/>
+    </p>
+    <h2>特殊字符</h2>
+    <p id="demo14"/>
+    <h2>长代码换行</h2>
+    <p id="demo15"/>
+    <h2>字符串是对象</h2>
+    <p id="demo16"/>
+    <p id="demo17"/>
+</div>
+<hr/>
+<div name="JS字符串方法">
+    <h1>JS字符串方法</h1>
+    <h2>字符串长度</h2>
+    <p id="demo18"/>
+    <h2>查找字符串中的字符串(未找到文本则返回-1)</h2>
+    <p id="demo19"/>
+    <h2>检索字符串中的字符串</h2>
+    <p id="demo20"/>
+    <h2>提取部分字符串</h2>
+    <p id="demo21" name="slice"/>
+    <p id="demo22" name="substring"/>
+    <p id="demo23" name="substr"/>
+    <h2>替换字符串内容</h2>
+    <p id="demo24"/>
+    <p id="demo25"/>
+    <h2>转换为大写和小写</h2>
+    <p id="demo26"/>
+    <p id="demo27"/>
+    <h2>concat()方法</h2>
+    <p id="demo28"/>
+    <h2>String.trim()</h2>
+    <p id="demo29"/>
+</div>
+<hr/>
+<div name="JS数字">
+    <h1>JS数字</h1>
+    <h2>NaN-非数值</h2>
+    <p id="demo30"/>
+    <p id="demo31"/>
+    <h2>Infinity</h2>
+    <p id="demo32"/>
+    <h2>十六进制</h2>
+    <p id="demo33"/>
+</div>
+<hr/>
+<div name="JS数字方法">
+    <h1>JS数字方法</h1>
+    <h2>toExponential()方法</h2>
+    <p id="demo34"/>
+    <h2>toFixed()方法</h2>
+    <p id="demo35"/>
+    <h2>toPrecision()方法</h2>
+    <p id="demo36"/>
+    <h2>valueOf()方法</h2>
+    <p id="demo37"/>
+    <h2>Number()方法</h2>
+    <p id="demo38"/>
+    <h2>parseInt()方法</h2>
+    <p id="demo39"/>
+    <h2>parseFloat()方法</h2>
+    <p id="demo40"/>
+    <h2>数值属性</h2>
+    <p id="demo41"/>
+</div>
+<hr/>
+<div name="JS数组">
+    <h1>JS数组</h1>
+    <h2>创建访问数组</h2>
+    <p id="demo42"/>
+    <h2>改变数组元素</h2>
+    <p id="demo43"/>
+    <h2>数组属性和方法:Length</h2>
+    <p id="demo44"/>
+    <h2>遍历数组</h2>
+    <p id="demo45"/>
+    <p id="demo46"/>
+</div>
+<hr/>
+<div name="JS数组方法">
+    <h1>JS数组方法</h1>
+    <h2>把数组转换为字符串</h2>
+    <p id="demo47"/>
+    <h2>Popping和Pushing</h2>
+    <p id="demo48"/>
+    <p id="demo49"/>
+    <h2>unshift()和shift()</h2>
+    <p id="demo50"/>
+    <h2>splice()添加和删除元素</h2>
+    <button onclick="spliceShow()">调用splice</button>
+    <p id="demo51"/>
+    <p id="demo52"/>
+    <p id="demo53"/>
+    <h2>concat()合并(连接)数组</h2>
+    <p id="demo54"/>
+    <h2>slice()剪切数组</h2>
+    <p id="demo55"/>
+</div>
+<hr/>
+<div name="JS数组排序">
+    <h1>JS数组排序</h1>
+    <h2>sort()按照字母顺序进行排序</h2>
+    <p id="demo56"/>
+    <h2>reverse()反转数组</h2>
+    <p id="demo57"/>
+    <h2>数字排序：比值函数</h2>
+    <p id="demo58"/>
+    <p id="demo59"/>
+    <h2>比值函数</h2>
+    <p>单机按钮按照字母顺序或数字顺序进行排序</p>
+    <button onclick="letterSort()">字母排序</button>
+    <button onclick="numSort()">数字排序</button>
+    <p id="demo60"/>
+    <h2>随机顺序排序</h2>
+    <p>点击按钮进行随机排序</p>
+    <button onclick="randomSort()">随机排序</button>
+    <h2>获取最大值或最小值</h2>
+    <button onclick="setMaxValue()">获取数组最大值</button>
+    <button onclick="setMinValue()">获取数组最小值</button>
+    <p id="demo61"/>
+    <p id="demo62"/>
+    <p id="demo63"/>
+    <h2>排序对象数组</h2>
+    <button onclick="sortClassMsg()">按照年龄排序</button>
+    <button onclick="sortClassByName()">按照姓名排序</button>
+    <p id="demo64"/>
+</div>
+<hr/>
+<div name="JS数组迭代">
+    <h1>JS数组迭代</h1>
+    <h2>Array.forEach()</h2>
+    <p id="demo65"></p>
+    <h2>Array.map()</h2>
+    <p id="demo66"></p>
+    <h2>Array.filter()</h2>
+    <p id="demo67"></p>
+    <h2>Array.reduce()</h2>
+    <p id="demo68"></p>
+    <h2>Array.every()</h2>
+    <p id="demo69"></p>
+    <h2>Array.some()</h2>
+    <p id="demo70"></p>
+    <h2>Array.indexOf()</h2>
+    <p id="demo71"></p>
+    <h2>Array.lastIndexOf()</h2>
+    <p id="demo72"></p>
+    <h2>Array.find()</h2>
+    <p id="demo73"></p>
+    <h2>Array.findIndex()</h2>
+    <p id="demo74"></p>
+</div>
+<hr/>
+<div name="JS日期">
+    <h1>JS日期</h1>
+    <h2>创建Date()对象</h2>
+    <p id="demo75"></p>
+    <h2>new Date(dateString)</h2>
+    <p id="demo76"></p>
+    <h2>创建一个零时</h2>
+    <p id="demo77"></p>
+</div>
+<hr/>
+<div name="JS日期格式">
+    <h1>JS日期格式</h1>
+    <h2>JS短日期</h2>
+    <p id="demo78"></p>
+</div>
+<hr/>
+<div name="JS获取日期方法">
+    <h1>JS获取日期方法</h1>
+    <h2>getTime()等</h2>
+    <p id="demo79"></p>
+    <h2>JS获取UTC时间</h2>
+    <p id="demo81"></p>
+    <h2>动态显示当前时间</h2>
+    <p id="demo80"></p>
+</div>
+<hr/>
+<div id="JS设置日期的方法">
+    <h1>JS设置日期的方法</h1>
+    <h2>设置日期</h2>
+    <h2>比较日期</h2>
+    <p id="demo82"></p>
+</div>
+<hr/>
+<div name="JS Math对象">
+    <h1>JS Math对象</h1>
+    <h2>Math.round()</h2>
+    <p id="demo83"></p>
+    <h2>Math.pow()</h2>
+    <p id="demo84"></p>
+    <h2>Math.sqrt()</h2>
+    <p id="demo85"></p>
+    <h2>Math.abs()</h2>
+    <p id="demo86"></p>
+    <h2>Math.ceil()</h2>
+    <p id="demo87"></p>
+    <h2>Math.floor()</h2>
+    <p id="demo88"></p>
+    <h2>Math.sin()</h2>
+    <p id="demo89"></p>
+    <h2>Math.cos()</h2>
+    <p id="demo90"></p>
+    <h2>Math.max()</h2>
+    <p id="demo91"></p>
+    <h2>Math.min()</h2>
+    <p id="demo92"></p>
+    <h2>Math.random()</h2>
+    <p id="demo93"></p>
+</div>
+<hr/>
+<div name="JS随机">
+    <h1>JS随机</h1>
+    <h2>Math.floor()+Math.random()来获取随机整数</h2>
+    <p id="demo94"></p>
+    <input id="input95" name="input1" value="10">输入最大值的范围</input>
+    <button onclick="getRandomDemo95()">获取最大随机值</button>
+    <p id="demo95">待获取随机数</p>
+    <button onclick="document.getElementById('demo96').innerHTML=funcitondemo96(0,100)">点击我</button>
+    <p id="demo96"></p>
+</div>
+<hr>
+<div name="JS逻辑">
+    <h1>JS逻辑</h1>
+    <h2>Boolean()</h2>
+    <p id="demo97"></p>
+</div>
+<hr/>
+<div name="JS条件">
+    <h1>JS条件</h1>
+    <h2>if else条件语句</h2>
+    <button onclick="funcDemo98()">获取当前时段</button>
+    <p id="demo98"></p>
+</div>
+<hr/>
+<div name="JS switch语句">
+    <h1>JS switch语句</h1>
+    <h2>练习：</h2>
+    <p id="demo99"></p>
+</div>
+<hr/>
+<div name="JS循环">
+    <h1>JS循环</h1>
+    <h2>For/In循环</h2>
+    <p id="demo100"></p>
+</div>
+<hr/>
+<div name="JS数据类型转换">
+    <h1>JS数据类型转换</h1>
+    <h2>constructor</h2>
+    <p id="demo101"></p>
+    <h2>数据类型转换：</h2>
+    <p>多为只是总结，可查看笔记</p>
+</div>
+<hr/>
+<div name="JS正则表达式">
+    <h1>JS正则表达式</h1>
+    <h2>使用字符串方法</h2>
+    <p id="demo102"></p>
+
+</div>
+
+
+<hr/>
+<a href="#top" style="display:block;text-align:center">顶部</a>
+
+<a name="down"/>
+<script>
+    console.log(5 + 6);
+    document.getElementById("output1").innerHTML = 5 + 6;
+    var x = 10;
+    var y = 10;
+    var z = 11;
+    document.getElementById("demo6").innerHTML = (x === y) + "<br/>" + (x === z);
+    var cars = ["Porsche", "Volvo", "BMW"];
+    document.getElementById("demo7").innerHTML = cars[2];
+    var person = {firstName: "Bill", lastName: "Gates", age: 62, eyeColor: "Blue"};
+    document.getElementById("demo8").innerHTML = person.firstName + "<br/>" + person.age;
+    document.getElementById("demo9").innerHTML = typeof 0;
+
+    function malfunction2() {
+        document.getElementById("demo3").innerHTML = "这是body中修改的P标签";
+    }
+
+    function myFunction5(num1, num2) {
+        return num1 * num2;
+    }
+
+    document.getElementById("demo10").innerHTML = myFunction5(2, 3);
+    document.getElementById("demo11").innerHTML = myFunction5;
+    var x, y, z;
+    x = 10;
+    y = 20;
+    z = x + y;
+    var t = z;
+    document.getElementById("demo5").innerHTML = "t的值是" + t + "。";
+
+    function myFunction6() {
+        document.getElementById("demo12").innerHTML = Date();
+    }
+
+    var txt = "ABCZXCASDLASDKHLGLKH";
+    var sln = txt.length;
+    document.getElementById("demo13").innerHTML = sln;
+    var specialStr = "这是一段有特殊字符的\"字符串\"";
+    document.getElementById("demo14").innerHTML = specialStr;
+    document.getElementById("demo15").innerHTML = "在字符串中 \
+			用反斜杠换行！";
+    var x16 = "Bill";
+    var y16 = new String("Bill");
+    document.getElementById("demo16").innerHTML = "x16变量类型为" + typeof x16 + "<br/>" +
+        "y16变量类型为" + typeof y16;
+    document.getElementById("demo17").innerHTML = "x16变量与y16变量 ==比较结果为：" +
+        (x16 == y16) + ";<br/>因值相同所以返回true" + "<br/>" +
+        "x16变量与y16变量===的比较结果为：" + (x16 === y16) + ";<br/>因为类型不同所以返回false";
+    var demo18 = "asdzxcasdqwezxzxc";
+    document.getElementById("demo18").innerHTML = "demo18的字符串长度为：" + demo18.length;
+    var demo19 = "The full name of China is the People's Republic of China.";
+    var demo19In = demo19.indexOf("China");
+    var demo19Last = demo19.lastIndexOf("China");
+    document.getElementById("demo19").innerHTML = "china字符出现起始的索引为：" +
+        demo19In + ";<br/>最后出现的索引为：" + demo19Last + ";";
+    var demo20 = "The full name of China is the People's Republic of China.";
+    var demo20Str = demo20.search("China");
+    document.getElementById("demo20").innerHTML = "Search检索字符串:" +
+        demo20Str;
+    var demo21 = "       Dog,Cat,Fish";
+    document.getElementById("demo21").innerHTML = "slice()方法提取字符串：" + demo21.slice(-8, -5);
+    document.getElementById("demo22").innerHTML = "substring()方法提取字符串：" +
+        demo21.substring(4, 7) + "    	\"索引无法为负值\" ;";
+    document.getElementById("demo23").innerHTML = "substr()方法提取字符串：" + demo21.substr(4, 3);
+    document.getElementById("demo24").innerHTML = "原字符串值为：" + demo21;
+    document.getElementById("demo25").innerHTML = "将dog替换为数字DDD:" + demo21.replace(/dog/i, "DDD");
+    document.getElementById("demo26").innerHTML = "将字符串转为大写：" + demo21.toUpperCase();
+    document.getElementById("demo27").innerHTML = "将字符串转为小写：" + demo21.toLowerCase();
+    document.getElementById("demo28").innerHTML = demo21.concat(" ", demo20);
+    document.getElementById("demo29").innerHTML = demo21.trim();
+    document.getElementById("demo30").innerHTML = 100 / "Apple";
+    document.getElementById("demo31").innerHTML = "\"Apple\" 是否为合法数：" + isNaN("Apple");
+    var demo32 = 2;
+    while (demo32 !== Infinity) {
+        demo32 = demo32 * demo32;
+        txt = txt + demo32 + "<br/>";
+    }
+    document.getElementById("demo32").innerHTML = txt + "<br/> 除0的结果：" + (2 / 0) + " " + (-2 / 0);
+    var demo33 = 128;
+    document.getElementById("demo33").innerHTML = "0xFF的值为：" + 0xFF + "<br/>" +
+        "toString()将数值" + demo33 + "转换为指定进制：<br/>16进制：" +
+        demo33.toString(16) + "<br/>8进制：" + demo33.toString(8) + "<br/>2进制：" +
+        demo33.toString(2);
+    var demo34 = 9.656;
+    document.getElementById("demo34").innerHTML = "9.656.toExponential(2、4、6) 的值：<br/>" +
+        demo34.toExponential() + "<br/>" + demo34.toExponential(2) + "<br/>" +
+        demo34.toExponential(4) + "<br/>" + demo34.toExponential(6);
+    document.getElementById("demo35").innerHTML = "toFixed(2)：" + demo34.toFixed(2);
+    document.getElementById("demo36").innerHTML = "toPrecision()方法：" + demo34.toPrecision(4);
+    document.getElementById("demo37").innerHTML = "valueOf()方法：" + demo34.valueOf() +
+        ";typeOf is :" + typeof demo34.valueOf();
+    var demo34 = true;
+    document.getElementById("demo38").innerHTML = "x=true调用Number()方法的结果是：" +
+        Number(demo34) + "<br/>" +
+        "将日期转换为数字(方法返回1970年1月1日至今的毫秒数)：" + Number(new Date("2019-10-17"));
+    document.getElementById("demo39").innerHTML = "\"10\":" + parseInt("10") + "<br/> \"10.33\":" + parseInt("10.33") + "<br/> \"10 20 30\":" + parseInt("10 20 30 ") + "<br/> \"10 years\"" + parseInt("10 years") + "<br/> \"years 10\":" + parseInt("years 10");
+    document.getElementById("demo40").innerHTML = "\"10\":" + parseFloat("10") + "<br/> \"10.33\":" + parseFloat("10.33") + "<br/> \"10 20 30\":" + parseFloat("10 20 30 ") + "<br/> \"10 years\"" + parseFloat("10 years") + "<br/> \"years 10\":" + parseFloat("years 10");
+    document.getElementById("demo41").innerHTML = "MAX_VALUE的值为:" + Number.MAX_VALUE + "<br/> MIN_VALUE的值为：" + Number.MIN_VALUE + "<br/> POSITIVE_INFINITY的值为：" + Number.POSITIVE_INFINITY + "<br/> NEGATIVE_INFINITY的值为：" + Number.NEGATIVE_INFINITY;
+    var demo42 = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo42").innerHTML = "数组创建以及显示：" + demo42 + "<br/> 访问数组元素 demo42[2]:" + demo42[2];
+    demo42[0] = "Opel";
+    document.getElementById("demo43").innerHTML = "修改后原数组值：" + demo42 + "<br/> 修改的索引值：" + demo42[0] + "<br/>数组类型：" + typeof demo42;
+    document.getElementById("demo44").innerHTML = "demo42数组的长度：" + demo42.length + "<br/> 访问最后一个元素：" + demo42[demo42.length - 1];
+    var demo45, demo45Length;
+    demo45Length = demo42.length;
+    demo45 = "<ul>";
+    for (var i = 0; i < demo45Length; i++) {
+        demo45 += "<li>" + demo42[i] + "</li>";
+    }
+    demo45 += "</ul>";
+    document.getElementById("demo45").innerHTML = "For循环方式遍历：<br/>" + demo45;
+
+    var demo46;
+    demo46 = "<ul>";
+    demo42.forEach(arrayByForeach);
+    demo46 += "</ul>";
+    document.getElementById("demo46").innerHTML = "Array.Foreach()函数遍历结果：<br/>" + demo46;
+
+    function arrayByForeach(value) {
+        demo46 += "<li>" + value + "</li>";
+    }
+
+    document.getElementById("demo47").innerHTML = "转换结果：" + demo42.toString() + "<br/>join()方法将数组元素姐合成一个字符串可自定义分隔符：" + demo42.join(" | ");
+    var popValue = demo42.pop();
+    document.getElementById("demo48").innerHTML = " pop()方法删除数组中的最后一个元素；pop()返回值：" + demo42.toString() + "<br/>被删除的元素：" + popValue;
+    document.getElementById("demo49").innerHTML = "push()方法，向数组结尾添加一个新元素,方法返回数组长度：" + demo42.push("Kiwi")
+        + "<br/>demo42数组内容：" + demo42.toString();
+    document.getElementById("demo50").innerHTML = "shift()方法删除数组中第一个元素" + demo42[0] +
+        "<br/> 结果：" + demo42.shift() + " 数组元素为：" + demo42.toString() +
+        "<br/> unshift()方法在数组开头插入元素返回值为：" + demo42.unshift("test") + ";数组元素为：" + demo42.toString();
+    document.getElementById("demo51").innerHTML = "原数组：" + demo42.toString();
+
+    function spliceShow() {
+        var spliceValue = demo42.splice(2, 1, "AddOne", "AddTwo");
+        document.getElementById("demo52").innerHTML = "修改后的数组：" + demo42.toString();
+        document.getElementById("demo53").innerHTML = "删掉的值：" + spliceValue;
+    }
+
+    var demo54 = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo54").innerHTML = "concat():拼接数组" + demo42.concat(demo54) +
+        "<br/> concat():拼接值" + demo54.concat("value1", "value2");
+    document.getElementById("demo55").innerHTML = "slice()剪切数组:" + demo54.slice(1);
+    document.getElementById("demo56").innerHTML = "数组排序sort():" + demo54.sort();
+    document.getElementById("demo57").innerHTML = "反转数组reverse():" + demo54.reverse();
+    var demo58 = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo58").innerHTML = "原数字数组:" + demo58.toString() + "<br/>数字排序升序:" + demo58.sort(function (a, b) {
+        return a - b
+    });
+    document.getElementById("demo59").innerHTML = "数字排序降序:" + demo58.sort(function (a, b) {
+        return b - a
+    });
+    var demo60 = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo60").innerHTML = demo60;
+
+    function letterSort() {
+        demo60.sort();
+        document.getElementById("demo60").innerHTML = demo60;
+    }
+
+    function numSort() {
+        demo60.sort(function (a, b) {
+            return a - b
+        });
+        document.getElementById("demo60").innerHTML = demo60;
+    }
+
+    document.getElementById("demo61").innerHTML = demo60;
+
+    function randomSort() {
+        document.getElementById("demo61").innerHTML = demo60.sort(function (a, b) {
+            return 0.3 - Math.random()
+        });
+    }
+
+    var demo62 = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo62").innerHTML = "原数组：" + demo62 + "</br>数组中最大值：" + Math.max.apply(null, demo62) +
+        "<br/>数组中最小值：" + Math.min.apply(null, demo62);
+
+    function getArrayMax(arr) {
+        var len = arr.length;
+        var max = -Infinity;
+        while (len--) {
+            if (arr[len] > max) {
+                max = arr[len];
+            }
+        }
+        return max;
+    }
+
+    function getArrayMin(arr) {
+        var len = arr.length;
+        var min = Infinity;
+        while (len--) {
+            if (arr[len] < min) {
+                min = arr[len];
+            }
+        }
+        return min;
+    }
+
+    function setMaxValue() {
+        document.getElementById("demo63").innerHTML = getArrayMax(demo62);
+    }
+
+    function setMinValue() {
+        document.getElementById("demo63").innerHTML = getArrayMin(demo62);
+    }
+
+    var classOne = [
+        {name: "李四", age: 10},
+        {name: "张三", age: 15},
+        {name: "王五", age: 9}
+    ];
+    showClassMsg(classOne);
+
+    function showClassMsg(objectClass) {
+        var classMsg = "";
+        for (var i = 0; i < objectClass.length; i++) {
+            classMsg += objectClass[i].name + "|" + objectClass[i].age + "<br/>";
+        }
+        document.getElementById("demo64").innerHTML = classMsg;
+    }
+
+    function sortClassMsg() {
+        classOne.sort(function (a, b) {
+            return a.age - b.age
+        });
+        showClassMsg(classOne);
+    }
+
+    function sortClassByName() {
+        classOne.sort(function (a, b) {
+            var x = a.name.toLowerCase();
+            var y = b.name.toLowerCase();
+            if (x < y) {
+                return -1;
+            }
+            if (x > y) {
+                return 1;
+            }
+            return 0;
+        });
+        showClassMsg(classOne);
+    }
+
+    var demo65 = [4, 9, 16, 25, 45];
+    var txt = "";
+    demo65.forEach(forEachDemo65);
+    document.getElementById("demo65").innerHTML = txt;
+
+    function forEachDemo65(value, index, array) {
+        txt = txt + value + "<br>";
+    }
+
+    var demo66 = demo65.map(demo66Map);
+
+    document.getElementById("demo66").innerHTML = demo66;
+
+    function demo66Map(value, index, array) {
+        return value * 3;
+    }
+
+
+    var demo67 = demo65.filter(demo67filter);
+    document.getElementById("demo67").innerHTML = demo67;
+
+    function demo67filter(value, index, array) {
+        return value > 18;
+    }
+
+    var demo68 = demo65.reduce(demo68reduce);
+
+    document.getElementById("demo68").innerHTML = "总和是：" + demo68;
+
+    function demo68reduce(total, value, index, array) {
+        return total + value;
+    }
+
+    var demo69 = demo65.every(demo69allOver18);
+    document.getElementById("demo69").innerHTML = "数组元素值是否都大于18：" + demo69;
+
+    function demo69allOver18(value, index, array) {
+        return value > 18;
+    }
+
+    var demo70 = demo65.some(demo70Some);
+    document.getElementById("demo70").innerHTML = "数组元素是否包含大于18的值：" + demo70;
+
+    function demo70Some(value, index, array) {
+        return value > 18;
+    }
+
+    var demo71 = ["Apple", "Orange", "Apple", "Mango"];
+
+    document.getElementById("demo71").innerHTML = "Apple出现的首位置" + demo71.indexOf("Apple");
+
+    document.getElementById("demo72").innerHTML = "Apple最后出现的位置" + demo71.lastIndexOf("Apple");
+
+    var demo73 = demo65.find(demo73Find);
+
+    document.getElementById("demo73").innerHTML = "数组中第一个大于18的元素值为：" + demo73;
+
+    function demo73Find(value, index, array) {
+        return value > 18;
+    }
+
+    var demo74 = demo65.findIndex(demo74FindIndex);
+
+    document.getElementById("demo74").innerHTML = "数组中第一个大于18的元素索引为：" + demo74;
+
+    function demo74FindIndex(value, index, array) {
+        return value > 18;
+    }
+
+    document.getElementById("demo75").innerHTML = "当前时间为：" + new Date() +
+        "<br/>将日期转换为UTC字符串:" + (new Date()).toUTCString() +
+        "<br/> 创建指定时间的对象(7参数)：" + new Date(2018, 11, 24, 10, 33, 30, 0) +
+        "<br/> 创建指定时间的对象(6参数)：" + new Date(2018, 12, 24, 10, 10, 30);
+
+    document.getElementById("demo76").innerHTML = "通过日期字符串创建的日期对象为：" + new Date("December 25, 2019 12:46:00");
+    document.getElementById("demo77").innerHTML = "创建一个零时日期对象：" + new Date(0);
+
+    document.getElementById("demo78").innerHTML = "创建短日期格式：" + new Date("02/19/2018") +
+        "<br/> 创建长日期格式：" + new Date("Feb 19 2018") +
+        "<br/> JS创建完整日期：" + new Date("Mon Feb 19 2018 06:55:23 GMT+0100 (W. Europe Standard Time)") +
+        "<br/> Date.parse 获取当前时间的毫秒数" + Date.parse((new Date().toString()));
+
+    document.getElementById("demo79").innerHTML = "getTime()：" + (new Date()).getTime() +
+        "<br/> getFullYear()：" + (new Date()).getFullYear() +
+        "<br/> getMonth()：" + (new Date()).getMonth() +
+        "<br/> getDate()：" + (new Date()).getDate() +
+        "<br/> getHours()：" + (new Date()).getHours() +
+        "<br/> getMinutes()：" + (new Date()).getMinutes() +
+        "<br/> getSeconds()：" + (new Date()).getSeconds() +
+        "<br/> getMilliseconds()：" + (new Date()).getMilliseconds() +
+        "<br/> getDay()：" + (new Date()).getDay()
+    ;
+    document.getElementById("demo81").innerHTML = "getTime()：" + (new Date()).getTime() +
+        "<br/> getUTCFullYear()：" + (new Date()).getUTCFullYear() +
+        "<br/> getUTCMonth()：" + (new Date()).getUTCMonth() +
+        "<br/> getUTCDate()：" + (new Date()).getUTCDate() +
+        "<br/> getUTCHours()：" + (new Date()).getUTCHours() +
+        "<br/> getUTCMinutes()：" + (new Date()).getUTCMinutes() +
+        "<br/> getUTCSeconds()：" + (new Date()).getUTCSeconds() +
+        "<br/> getUTCMilliseconds()：" + (new Date()).getUTCMilliseconds() +
+        "<br/> getUTCDay()：" + (new Date()).getUTCDay()
+    ;
+    document.getElementById("demo80").innerHTML = new Date().toString();
+    window.setInterval(getDateNow, 1000);
+
+    function getDateNow() {
+        document.getElementById("demo80").innerHTML = new Date().toString();
+    }
+
+    var today, someday, demo82;
+    today = new Date();
+    someday = (new Date()).setFullYear(2100, 0, 15);
+
+    if (today < someday) {
+        demo82 = "今天在2100年1月15日之前";
+    }
+    else {
+        demo82 = "今天在2100年1月15日之后";
+    }
+    document.getElementById("demo82").innerHTML = demo82;
+
+    document.getElementById("demo83").innerHTML = "Math.round(8.2)：" + Math.round(8.2);
+    document.getElementById("demo84").innerHTML = "Math.pow(8,2)：" + Math.pow(8, 2);
+    document.getElementById("demo85").innerHTML = "Math.sqrt(9)：" + Math.sqrt(9);
+    document.getElementById("demo86").innerHTML = "Math.abs(-9)：" + Math.abs(-9);
+    document.getElementById("demo87").innerHTML = "Math.ceil(8.2)：" + Math.ceil(8.2);
+    document.getElementById("demo88").innerHTML = "Math.floor(8.2)：" + Math.floor(8.2);
+    document.getElementById("demo89").innerHTML = "Math.sin(8.2)：" + Math.sin(90 * Math.PI / 180);
+    document.getElementById("demo90").innerHTML = "Math.cos(8.2)：" + Math.cos(0 * Math.PI / 180);
+    var demo91 = [1, 2, 55, 4, 100];
+    document.getElementById("demo91").innerHTML = "Math.max(demo91)：" + Math.max(demo91);
+    document.getElementById("demo92").innerHTML = "Math.min(demo91)：" + Math.min(1, 2, 55, 4, 100);
+    document.getElementById("demo93").innerHTML = "Math.random()：" + Math.random();
+    document.getElementById("demo93").innerHTML = "Math.random()：" + Math.random();
+    document.getElementById("demo94").innerHTML = "获取一个10以内的整数" + Math.floor(Math.random() * 10);
+
+    function funcitondemo96(min, max) {
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    document.getElementById("demo97").innerHTML = "Boolean(10>9):" + Boolean(10 > 9) +
+        "<br/> 或直接 10>9 比较：" + (10 > 9);
+
+    <!--获取用户输入随机数范围-->
+    function getRandomDemo95() {
+        document.getElementById("demo95").innerHTML = Math.floor(Math.random() * (document.getElementById("input95").value));
+    }
+
+    function funcDemo98() {
+        var demo98, demo98Time;
+        demo98Time = new Date().getHours()
+        if (demo98Time < 12) {
+            demo98 = "早上好";
+        }
+        else if (demo98Time > 12 && demo98Time < 18) {
+            demo98 = "下午好";
+        }
+        else {
+            demo98 = "晚上好";
+        }
+        document.getElementById("demo98").innerText = demo98;
+    }
+
+    var day;
+
+    switch (new Date().getDay()) {
+
+        case 0:
+            day = "星期天";
+            break;
+        case 1:
+            day = "星期一";
+            break;
+        case 2:
+            day = "星期二";
+            break;
+        case 3:
+            day = "星期三";
+            break;
+        case 4:
+            day = "星期四";
+            break;
+        case 5:
+            day = "星期五";
+            break;
+        case 6:
+            day = "星期六";
+            break;
+    }
+    document.getElementById("demo99").innerHTML = "今天是" + day;
+
+    var demo100Array = ["A", "B", "C", "D"];
+    var demo100Test = "";
+    for (x in demo100Array) {
+        demo100Test += demo100Array[x] + "|";
+    }
+    document.getElementById("demo100").innerHTML = "Forin循环结果:" + demo100Test;
+    document.getElementById("demo101").innerHTML = "\"Bill\".constructor:" + "Bill".constructor +
+        "<br/> (3.14).constructor:" + (3.14).constructor +
+        "<br/> false.constructor:" + false.constructor +
+        "<br/>[1,2,3,4].constructor:" + [1, 2, 3, 4].constructor +
+        "<br/>{name:'Bill', age:62}.constructor:" + {name: 'Bill', age: 62}.constructor +
+        "<br/> new Date().constructor:" + new Date().constructor +
+        "<br/> function () {}.constructor:" + function () {
+        }.constructor;
+
+
+</script>
+</body>
+</html>
