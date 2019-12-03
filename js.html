@@ -5,7 +5,7 @@
     <style>
         h1 {
             text-align: center;
-            color: red;
+            color: #ff2761;
         }
 
         h2 {
@@ -15,6 +15,9 @@
     <script>function malfunction() {
         document.getElementById("demo2").innerHTML = "这是HEAD种修改的P标签";
     }
+	
+	
+	
 
     </script>
 </head>
@@ -100,7 +103,7 @@
 <div name="JS字符串">
     <h1>JS字符串</h1>
     <h2>字符串长度</h2>
-    <p>"AAA"的字符长度为：<a id="demo13"/>
+    <p>"AAA"的字符长度为：<a id="demo13"></a>
     </p>
     <h2>特殊字符</h2>
     <p id="demo14"/>
@@ -418,12 +421,61 @@ let定义全局变量不可使用window.属性显示</pre>
     </h2>
     <p id="demo113"></p>
 </div>
+<hr/>
+<div name="JS const">
+    <h1>JS const</h1>
+    <h2>const 与let相同，但是不可重新赋值</h2>
+</div>
+<hr/>
+<div name="JS调试">
+    <h1>JS调试</h1>
+    <h2>console.log()方法用来显示JS的值，通过F12在浏览器调试窗口查看</h2>
+    <p id="demo114"></p>
+    <h2>debugger 关键词</h2>
+    <p id="demo115">添加debugger此标签的值不会改变</p>
+</div>
+<hr/>
+<div name="JS样式指南">
+    <h1>JS样式指南</h1>
+    <h2>详细请查看笔记</h2>
+</div>
+<hr/>
+<div name="JS常见错误">
+    <h1>JS常见错误</h1>
+    <h2>详细请查看笔记</h2>
+    <h2>令人费解的浮点数</h2>
+    <p id="demo116"></p>
+</div>
+<ht/>
+<div name="JS性能">
+    <h1>JS性能</h1>
+    <h2>减少循环中的活动</h2>
+    <pre>
+        较差的代码
+        var i;
+        for(i=0;i < arr.length;i++)
+        {
+        }
+        更好的代码
+        var i;
+        var l=arr.length;
+        for(i=0;i< ;i++)
+        {
+        }
+    </pre>
+    <h2>减少DOM访问</h2>
+    <pre>
+        var obj;
+        obj=document.getElementById("demo");
+        obj.innerHTML="hello";
+    </pre>
 
+</div>
 
 <hr/>
 <a href="#top" style="display:block;text-align:right">顶部</a>
 
-<a name="down"/>
+<a name="down"></a>
 <script>
     // "use strict";
     try {
@@ -947,7 +999,21 @@ let定义全局变量不可使用window.属性显示</pre>
         // const testConstPropery = "A";
         // testConstPropery = "2";
 
-        // adddlert("欢迎访问！");
+        var demo114, demo114a, demo114b;
+        demo114a = 5;
+        demo114b = 10;
+        demo114 = demo114a + demo114b;
+        console.log("demo114的值：" + demo114);
+        document.getElementById("demo114").innerHTML = "demo114的值为：" + demo114 +
+            "<br/> 在调试窗口查看值";
+        debugger;
+        document.getElementById("demo115").innerHTML = "未添加debugger将会变成当前文本";
+        //JS常见错误
+        var demo116a = 0.1;
+        var demo116b = 0.2;
+        document.getElementById("demo116").innerHTML = "0.1+0.2=" + (demo116a + demo116b) +
+            "<br/>针对浮点数相加导致结果差异，可通过扩大倍数来处理：" + (demo116a * 30 + demo116b * 30) / 30;
+        // alert("欢迎访问！");
         document.getElementById("demo107").innerHTML = "暂无异常！";
         // throw("测试用户自定义异常");
     }
