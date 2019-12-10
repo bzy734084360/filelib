@@ -13,11 +13,9 @@
         }
     </style>
     <script>function malfunction() {
-        document.getElementById("demo2").innerHTML = "这是HEAD种修改的P标签";
+        document.getElementById("demo2").innerHTML = "这是head中修改的P标签";
     }
-	
-	
-	
+
 
     </script>
 </head>
@@ -446,7 +444,7 @@ let定义全局变量不可使用window.属性显示</pre>
     <h2>令人费解的浮点数</h2>
     <p id="demo116"></p>
 </div>
-<ht/>
+<hr/>
 <div name="JS性能">
     <h1>JS性能</h1>
     <h2>减少循环中的活动</h2>
@@ -469,9 +467,38 @@ let定义全局变量不可使用window.属性显示</pre>
         obj=document.getElementById("demo");
         obj.innerHTML="hello";
     </pre>
+</div>
+<hr/>
+<div name="JSON方法">
+    <h1>JSON方法</h1>
+    <h2>JSON.parse()</h2>
+    <p id="demo117"></p>
+    <h2>JSON.stringify()</h2>
+    <p id="demo118"></p>
+</div>
+<hr>
+<div name="JS表单认证">
+    <h1>JS表单认证</h1>
+    <h2>JS实例</h2>
+    <form name="myForm" onsubmit="return JSFormAuth()">
+        姓名：<input type="text" name="fname">
+        <input type="submit" value="提交">
+    </form>
+    <h2>HTML自带表单认证</h2>
+    <form action="/demo/action_page.php" method="post">
+        <input type="text" name="HTMLDemo1" required>
+        <input type="submit" value="提交">
+    </form>
+</div>
+<hr>
+<div name="JS表单API">
+    <h1>JS表单API</h1>
+    <h2>约束验证DOM;checkValidity()</h2>
+    <input id="demo119" type="number" min="100" max="300" required>
+    <button onclick="JSDOMAtuh()">提交</button>
+    <p id="demo120"></p>
 
 </div>
-
 <hr/>
 <a href="#top" style="display:block;text-align:right">顶部</a>
 
@@ -873,7 +900,7 @@ let定义全局变量不可使用window.属性显示</pre>
         document.getElementById("demo97").innerHTML = "Boolean(10>9):" + Boolean(10 > 9) +
             "<br/> 或直接 10>9 比较：" + (10 > 9);
 
-        <!--获取用户输入随机数范围-->
+        //获取用户输入随机数范围
         function getRandomDemo95() {
             document.getElementById("demo95").innerHTML = Math.floor(Math.random() * (document.getElementById("input95").value));
         }
@@ -1013,6 +1040,34 @@ let定义全局变量不可使用window.属性显示</pre>
         var demo116b = 0.2;
         document.getElementById("demo116").innerHTML = "0.1+0.2=" + (demo116a + demo116b) +
             "<br/>针对浮点数相加导致结果差异，可通过扩大倍数来处理：" + (demo116a * 30 + demo116b * 30) / 30;
+        //JSON.parse() JSON.stringify()方法
+        var demo117json = '{"name":"Bill","age":62,"city":"Seatle"}';
+        var demo117obj = JSON.parse(demo117json);
+        document.getElementById("demo117").innerHTML = "JSON.parse():" + demo117obj.name + "|" + demo117obj.age;
+        document.getElementById("demo118").innerHTML = "JSON.stringify():" + JSON.stringify(demo117obj);
+
+        //JS表单认证
+        function JSFormAuth() {
+            let x = document.forms["myForm"]["fname"].value;
+            debugger;
+            if (x == "") {
+                alert("必须填写姓名！");
+                return false;
+            }
+
+        }
+
+        //JS 约束验证DOM
+        function JSDOMAtuh() {
+            let inpOjb = document.getElementById("demo119");
+            if (!inpOjb.checkValidity()) {
+                document.getElementById("demo120").innerHTML = inpOjb.validationMessage;
+            }
+            else {
+                document.getElementById("demo120").innerHTML = "输入有效！";
+            }
+        }
+
         // alert("欢迎访问！");
         document.getElementById("demo107").innerHTML = "暂无异常！";
         // throw("测试用户自定义异常");
