@@ -15,8 +15,6 @@
     <script>function malfunction() {
         document.getElementById("demo2").innerHTML = "这是head中修改的P标签";
     }
-
-
     </script>
 </head>
 <body>
@@ -497,6 +495,20 @@ let定义全局变量不可使用window.属性显示</pre>
     <input id="demo119" type="number" min="100" max="300" required>
     <button onclick="JSDOMAtuh()">提交</button>
     <p id="demo120"></p>
+</div>
+<hr>
+<div name="JS对象JS属性">
+    <h1>JS对象JS属性</h1>
+    <h2>JS访问对象属性的语法</h2>
+    <p id="demo121"></p>
+    <h2>for……in循环</h2>
+    <p id="demo122"></p>
+</div>
+<hr>
+<div name="JS对象方法">
+    <h1>JS对象方法</h1>
+    <h2>JS方法</h2>
+    <p id="demo123"></p>
 
 </div>
 <hr/>
@@ -1067,6 +1079,27 @@ let定义全局变量不可使用window.属性显示</pre>
                 document.getElementById("demo120").innerHTML = "输入有效！";
             }
         }
+
+        //JS对象
+        //JS属性
+        var objectDemo121 = {
+            "Name": "名字", "Age": 18, "Sex": "男", fullName: function () {
+                return this.Name + "|" + this.Age
+            }
+        };
+        var txtDemo121 = "";
+        document.getElementById("demo121").innerHTML = "object.property:" + objectDemo121.Age +
+            "<br> object[\"property\"]:" + objectDemo121["Name"];
+        //JS添加属性
+        objectDemo121.OurCode = "AE280";
+        delete objectDemo121.Sex;
+        //JS for……in循环
+        for (x in objectDemo121) {
+            txtDemo121 += objectDemo121[x];
+        }
+        document.getElementById("demo122").innerHTML = "遍历对象输出：" + txtDemo121;
+        //JS方法
+        document.getElementById("demo123").innerHTML = "JS对象方法:" + objectDemo121.fullName();
 
         // alert("欢迎访问！");
         document.getElementById("demo107").innerHTML = "暂无异常！";
