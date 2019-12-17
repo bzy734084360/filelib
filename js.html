@@ -509,8 +509,41 @@ let定义全局变量不可使用window.属性显示</pre>
     <h1>JS对象方法</h1>
     <h2>JS方法</h2>
     <p id="demo123"></p>
-
+    <h2>JS内建方法</h2>
+    <p id="demo124"></p>
+    <h2>JS添加对象方法</h2>
+    <p id="demo125"></p>
 </div>
+<hr/>
+<div name="JS对象访问器">
+    <h1>JS对象访问器</h1>
+    <h2>JS Getter get关键词</h2>
+    <p id="demo126"></p>
+    <h2>JS Setter set关键词</h2>
+    <p id="demo127"></p>
+    <h2>JS计数器</h2>
+    <p id="demo128"></p>
+</div>
+<hr>
+<div name="JS对象构造器">
+    <h1>JS对象构造器</h1>
+    <h2>JS对象构造器：</h2>
+    <p id="demo129"></p>
+</div>
+<hr>
+<div name="JS对象原型">
+    <h1>JS对象原型</h1>
+    <h2>JS prototype属性为对象构造器添加属性和方法</h2>
+    <p id="demo130"></p>
+</div>
+<hr>
+<div name="JS ES5对象方法">
+    <h1>JS ES5对象方法</h1>
+    <h2>更改属性的值</h2>
+    <p id="demo131"></p>
+</div>
+
+
 <hr/>
 <a href="#top" style="display:block;text-align:right">顶部</a>
 
@@ -1083,8 +1116,13 @@ let定义全局变量不可使用window.属性显示</pre>
         //JS对象
         //JS属性
         var objectDemo121 = {
-            "Name": "名字", "Age": 18, "Sex": "男", fullName: function () {
-                return this.Name + "|" + this.Age
+            "Name": "名字", "Age": 18, "Sex": "男", language: "en", fullName: function () {
+                return this.Name + "|" + this.Age;
+            }, get lang() {
+                return this.language;
+            },
+            set lang(lang) {
+                this.language = lang;
             }
         };
         var txtDemo121 = "";
@@ -1099,7 +1137,69 @@ let定义全局变量不可使用window.属性显示</pre>
         }
         document.getElementById("demo122").innerHTML = "遍历对象输出：" + txtDemo121;
         //JS方法
-        document.getElementById("demo123").innerHTML = "JS对象方法:" + objectDemo121.fullName();
+        document.getElementById("demo123").innerHTML = "JS对象方法:" + objectDemo121.fullName() +
+            "<br> 若访问对象方法是没有添加()则返回函数定义：" + objectDemo121.fullName;
+        //JS 使用内建方法
+        var demo124Message = "Hello World";
+        document.getElementById("demo124").innerHTML = "使用String对象内建方法：" + demo124Message.toUpperCase();
+        //JS 对象添加新的方法
+        objectDemo121.newFunc = function () {
+            return this.Age;
+        };
+        document.getElementById("demo125").innerHTML = "添加新年龄方法：" + objectDemo121.newFunc();
+        //JS 对象访问器
+        //get
+        document.getElementById("demo126").innerHTML = "JS对象访问器get：" + objectDemo121.lang;
+        //set
+        objectDemo121.lang = "Test";
+        document.getElementById("demo127").innerHTML = "JS对象访问器set：" + objectDemo121.language;
+        //JS 计数器
+        var demo128Obj = {
+            counter: 0,
+            get reset() {
+                this.counter = 0;
+            },
+            get increment() {
+                this.counter++;
+            },
+            get decrement() {
+                this.counter--;
+            },
+            set add(value) {
+                this.counter += value;
+            },
+            set subtract(value) {
+                this.counter -= value;
+            }
+        };
+        demo128Obj.reset;
+        demo128Obj.add = 5;
+        demo128Obj.subtr = 1;
+        demo128Obj.increment;
+        demo128Obj.decrement;
+        document.getElementById("demo128").innerHTML = "JS计数器：" + demo128Obj.counter;
+
+        //JS对象构造器
+        function Demo129Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        //prototype为对象构造器添加函数和方法;
+        Demo129Person.prototype.showName = function () {
+            return this.firstName + " " + this.lastName;
+        };
+        Demo129Person.prototype.sex = "男";
+
+        var demo129Obj = new Demo129Person("Bill", "Gat", 62, "blue");
+        document.getElementById("demo129").innerHTML = "对象构造器创建对象：" + demo129Obj.age;
+        //JS对象原型
+        document.getElementById("demo130").innerHTML = "JS为对象构造器添加新属性：" + demo129Obj.sex +
+            "<br> JS为对象构造器添加新方法：" + demo129Obj.showName();
+        //JS ES5对象方法
+
 
         // alert("欢迎访问！");
         document.getElementById("demo107").innerHTML = "暂无异常！";
