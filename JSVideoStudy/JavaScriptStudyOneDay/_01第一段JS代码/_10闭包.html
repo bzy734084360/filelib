@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //闭包
+        //两个方法嵌套，外面方法定义的变量，里面可以访问
+        //闭包效率低延长了作用域，没事别写
+        function f1(n) {
+
+            return function () {
+                alert(n);
+            }
+        }
+        var result = f1('小黑');
+        result();
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

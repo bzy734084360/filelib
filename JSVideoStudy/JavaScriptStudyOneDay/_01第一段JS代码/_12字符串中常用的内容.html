@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+
+        //    length属性：获取字符串的字符个数。（无论中文字符还是英文字符都算1个字符。）
+        //var name = '琪琪';
+        //alert(name.length);
+        //charAt(index)方法：获取指定索引位置的字符.索引从零开始
+        //var name = 'abcde';
+        //alert(name.charAt(2));
+        //indexOf('字符串',startIndex)方法：获取指定字符串第一次出现的位置。startIndex表示从第几个开始搜索；
+        //var msg = 'abcdefg';
+        //alert(msg.indexOf('c'));
+        //split('分隔符',limit);//根据分隔符讲一个字符串返回为一个数组.limit标识要返回的数组最大长度(可自定义)
+        //多个分隔符使用正则表达式：var msg = 'a★b★c☆d☆e#f';var vals = msg.split(/☆|★|#/);alert(vals);
+        //第一种用法
+        //var msg = '小黑|琪琪|小马|小王';
+        //var names = msg.split('|');
+        //alert(names);
+        //for (var i = 0; i < names.length; i++) {
+        //    alert(names[i]);
+        //}
+        //第二种方法，返回指定数量的截取
+        //var msg = '小黑|琪琪|小马|小王';
+        //var names = msg.split('|', 2);
+        //alert(names);
+        //第三个 使用正则表达式
+        //var msg = 'a★b★c☆d☆e#f';
+        //msg = msg.split(/★|☆|#/);
+        //alert(msg);
+        //substr(startIndex,len)//从startIndex开始，截取len个字符。
+        //var msg = '天天太难,哦吼吼吼';
+        //msg = msg.substr(2, 4);
+        //alert(msg);
+        //substring(startIndex,stopIndex)//从startIndex开始，截取到stopIndex位置（不包括stopIndex所在的字符）。
+        var msg = '天天太难,哦吼吼吼';
+        msg = msg.substring(2, 4);
+        alert(msg);
+        //toUpperCase()//转换大写、toLowerCase();//转换小写
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

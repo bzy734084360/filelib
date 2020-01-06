@@ -100,6 +100,12 @@
     <Content Include="_06JS中作用域.html" />
     <Content Include="_07类型转换.html" />
     <Content Include="_08JS中的函数.html" />
+    <Content Include="_09匿名函数.html" />
+    <Content Include="_10闭包.html" />
+    <Content Include="_11面向对象.html" />
+    <Content Include="_12字符串中常用的内容.html" />
+    <Content Include="_13Array.html" />
+    <Content Include="_14练习.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
