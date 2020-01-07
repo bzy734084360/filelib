@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+            document.getElementById('dv').onmousemove = function () {
+                //alert(arguments.length);
+
+                //相对于页面的左上角的坐标，横坐标和纵坐标
+                //document.title = window.event.clientX + '==' + window.event.clientY;
+                //相对于屏幕左上角的坐标.
+                //document.title = window.event.screenX + '==' + window.event.screenY;
+                //相当于层的左上角的坐标
+                //document.title = window.event.offsetX + '==' + window.event.offsetY;
+                //兼容写法
+                if (arguments.length > 0) {
+                    document.title = arguments[0].clientX + '==' + arguments[0].clientY;
+                }
+                else {
+                    document.title = window.event.offsetX + '==' + window.event.offsetY;
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div id="dv" style="width:300px;height:200px;background-color:aqua">
+
+    </div>
+</body>
+</html>

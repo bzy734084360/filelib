@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" name="name" value="神奇的按钮" id="btn" onclick="f1();" />
+    <script type="text/javascript">
+        //要操作页面的元素(标签)那就要写到onload中
+        //不操作可以不用
+        function f1() {
+            alert('迁徙猿');
+        }
+        //在HTML中注册事件加() 在JS中添加事件则不加()
+        onload = function () {
+            document.getElementById('btn').onclick = f1;
+        };
+    </script>
+</body>
+
+</html>

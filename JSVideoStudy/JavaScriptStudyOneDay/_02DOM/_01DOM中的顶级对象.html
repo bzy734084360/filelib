@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        //var num = 100;
+        //alert(num);
+        //window.alert(num);
+        //function f1() {
+        //    window.alert('哈哈哈');
+        //}
+        //window.f1();
+        //在JS中声明的变量，方法都属于window,所以window是顶级对象;
+        //name是为了提交,id是唯一标识
+        //调用按钮
+        //alert(window.btn.value);
+        //onload = function () {
+        //    alert(window.btn.value);
+        //}
+        //onload = function () {
+        //    document.getElementById('btn');//推荐使用
+        //    alert(window.fm.btn.value);
+        //}
+        onload = function () {
+            document.getElementById('btn').value = '测试';
+        }
+    </script>
+    <!--<script type="text/javascript">
+        alert(num);
+
+    </script>-->
+</head>
+<body>
+    <form action="/" method="get" id="fm">
+        <input type="button" name="name" value="按钮" id="btn" />
+    </form>
+</body>
+</html>

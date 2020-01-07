@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        //页面运行后加载事件，只能有一个事件
+        onload = function () {
+            alert('第一次加载');
+        };
+        onload = function () {
+            alert('第二次加载');
+        };
+        //页面关闭后触发事件
+        //onunload = function () {
+        //    //alert('触发了这个事件');
+        //    alert('第一次加载');
+        //};
+        //页面关闭之前触发事件
+        onbeforeunload = function () {
+            alert('触发了这个事件');
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>
