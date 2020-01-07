@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //原型
+        var email = 'xiaohei@126.com';
+        //function isEmail(msg) {
+        //    return msg.indexOf('@') != -1 ? true : false;
+        //}
+        //alert(isEmail(email));
+        //变成系统的方法
+        String.prototype.isEmail = function () {
+            return this.indexOf('@') != -1 ? true : false;
+        };
+
+        alert(email.isEmail());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

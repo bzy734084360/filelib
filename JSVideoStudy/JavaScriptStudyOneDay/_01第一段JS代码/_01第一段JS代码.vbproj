@@ -106,6 +106,7 @@
     <Content Include="_12字符串中常用的内容.html" />
     <Content Include="_13Array.html" />
     <Content Include="_14练习.html" />
+    <Content Include="_15原型.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
