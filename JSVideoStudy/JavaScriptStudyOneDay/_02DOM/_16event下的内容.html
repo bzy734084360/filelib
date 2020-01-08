@@ -5,11 +5,32 @@
     <title></title>
     <script>
 
+        onload = function () {
+            //判断分辨率
+            document.getElementById('dv').onmousedown = function () {
+                //获取鼠标键的值
+                //alert(window.event.button);
+                //获取当前分辨率
+                alert(window.screen.width);
+                alert(window.screen.height);
+            };
+            document.getElementById('dv1').onmousedown = function () {
+                //获取鼠标键的值
+                //alert(window.event.button);
+                //获取当前分辨率
+                alert(window.screen.width);
+                alert(window.screen.height);
+            };
+            //火狐或其他兼容调用
+            //document.getElementById('dv1').onmousedown = function (e) {
+            //方法中添加参数e  然后e.button;调用  e=window.event;
+        };
     </script>
 </head>
 <body>
-    <div style="width:300px;height:200px;background-color:aqua">
-
+    <div id="dv" style="width:300px;height:200px;background-color:aqua">
+    </div>
+    <div id="dv1" style="width:600px;height:600px;background-color:blue">
     </div>
 </body>
 </html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+            //clipboard.on('success', function (e) {
+            //    console.info('Action:', e.action);
+            //    console.info('Text:', e.text);
+            //    console.info('Trigger:', e.trigger);
+
+            //    e.clearSelection();
+            //});
+
+            //clipboard.on('error', function (e) {
+            //    console.error('Action:', e.action);
+            //    console.error('Trigger:', e.trigger);
+            //});
+            //IE浏览器中
+            //紧支持右键点击复制
+            document.body.oncopy = function () {
+                setTimeout(function () {
+                    //仅限于IE浏览器
+                    //获取粘贴板中的内容
+                    var txt = window.clipboardData.getData('text') + '本文出自于';
+                    alert(txt);
+                    //设置内容
+                    clipboardData.setData('text', txt);
+                }, 100)
+                ////获取粘贴板中的内容
+                //var txt = clipboardData.getData('text') + '本文出自于xxx';
+                ////alert(txt);
+                ////设置内容
+                //clipboardData.setData('text', txt);
+            };
+            //Chrome 中
+        }
+    </script>
+</head>
+<body>
+    1>------ 已启动生成: 项目: _02DOM, 配置: Debug Any CPU ------
+    1>  _02DOM -> E:\于富\jsnew1\filelib\JSVideoStudy\JavaScriptStudyOneDay\_02DOM\bin\_02DOM.dll
+    ========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
+</body>
+</html>

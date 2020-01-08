@@ -106,6 +106,9 @@
     <Content Include="_14超链接显示时间.html" />
     <Content Include="_15事件冒泡.html" />
     <Content Include="_16event下的内容.html" />
+    <Content Include="_17关于粘贴板.html" />
+    <Content Include="_18设置粘贴板中的内容.html" />
+    <Content Include="_19签入广告的代码.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
