@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        img {
+            position: absolute; /*完全脱离*/
+            width: 150px;
+            height: 175px;
+        }
+    </style>
+    <script type="text/javascript">
+        onload = function () {
+            //第一步脱离文档流
+
+            //第二步 设置事件
+            document.onmousemove = function () {
+                //第三部设置坐标
+                var inObj = document.getElementById('im');
+                inObj.style.left = window.event.clientX + 'px';
+                inObj.style.top = window.event.clientY + 'px';
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="images/2.gif" alt="未找到图片" id="im" />
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
+            /*光标样式*/
+            cursor: pointer;
+        }
+
+        p {
+            width: 150px;
+            height: 150px;
+            background-color: bisque;
+        }
+    </style>
+    <script>
+        //事件冒泡：元素中还有元素，为每个元素注册了相同时间，一旦触发里面元素事件，外面事件也被触发了
+        onload = function () {
+            document.getElementById('dv').onclick = function () {
+                //this 记录的当前触发的
+                //alert(this.id);
+                //src 记录的是最初触发的
+                alert(window.event.srcElement.id);//事件源的ID
+            }
+            document.getElementById('p1').onclick = function () {
+                alert(this.id);
+            }
+            document.getElementById('st').onclick = function () {
+                alert(this.id);
+                //取消事件冒泡
+                //无效
+                //return false;
+                //无效
+                //window.event.returnValue = false;
+                //IE
+                window.event.cancelBubble = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="dv">
+        <p id="p1">
+            <strong id="st">粗体</strong>
+        </p>
+    </div>
+</body>
+</html>

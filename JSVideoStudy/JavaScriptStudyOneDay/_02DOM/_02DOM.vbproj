@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="1.css" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.gif" />
     <Content Include="Web.config" />
     <Content Include="_01DOM中的顶级对象.html" />
     <Content Include="_02为按钮注册事件.html" />
@@ -100,6 +102,10 @@
     <Content Include="_10window下的属性或事件.html" />
     <Content Include="_11css介绍.html" />
     <Content Include="_12各种兼容问题.html" />
+    <Content Include="_13图片飞来飞去.html" />
+    <Content Include="_14超链接显示时间.html" />
+    <Content Include="_15事件冒泡.html" />
+    <Content Include="_16event下的内容.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />

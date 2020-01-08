@@ -4,22 +4,42 @@
     <meta charset="utf-8" />
     <title></title>
     <script>
-        onload = function () {
-            document.getElementById('dv').onmousemove = function () {
-                //alert(arguments.length);
+        //关于坐标监测
+        //onload = function () {
+        //    document.getElementById('dv').onmousemove = function () {
+        //        //alert(arguments.length);
 
-                //相对于页面的左上角的坐标，横坐标和纵坐标
-                //document.title = window.event.clientX + '==' + window.event.clientY;
-                //相对于屏幕左上角的坐标.
-                //document.title = window.event.screenX + '==' + window.event.screenY;
-                //相当于层的左上角的坐标
-                //document.title = window.event.offsetX + '==' + window.event.offsetY;
-                //兼容写法
-                if (arguments.length > 0) {
-                    document.title = arguments[0].clientX + '==' + arguments[0].clientY;
-                }
-                else {
-                    document.title = window.event.offsetX + '==' + window.event.offsetY;
+        //        //相对于页面的左上角的坐标，横坐标和纵坐标
+        //        //document.title = window.event.clientX + '==' + window.event.clientY;
+        //        //相对于屏幕左上角的坐标.
+        //        //document.title = window.event.screenX + '==' + window.event.screenY;
+        //        //相当于层的左上角的坐标
+        //        //document.title = window.event.offsetX + '==' + window.event.offsetY;
+        //        //兼容写法
+        //        if (arguments.length > 0) {
+        //            //火狐
+        //            document.title = arguments[0].clientX + '==' + arguments[0].clientY;
+        //        }
+        //        else {
+        //            //IE
+        //            document.title = window.event.offsetX + '==' + window.event.offsetY;
+        //        }
+        //    }
+        //}
+
+        //关于键的问题
+        //关于键的监测
+        onload = function () {
+
+            document.getElementById('dv').onmousedown = function () {
+                if (window.event.altKey) {
+                    alert('按下了alt键');
+                } else if (window.event.shiftKey) {
+                    alert('按下了shift键');
+                } else if (window.event.ctrlKey) {
+                    alert('按下了ctrl键');
+                } else {
+                    alert('只按下了鼠标');
                 }
             }
         }

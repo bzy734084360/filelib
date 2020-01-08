@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        onload = function () {
+            document.getElementById('al').onclick = function (e) {
+
+                if (window.event.shiftKey) {
+                    alert(new Date().toLocaleTimeString());
+                    //阻止重新跳转
+                    //取消默认事件
+                    //方法1
+                    //IE
+                    //window.event.returnValue = false;
+                    //方法2
+                    //火狐中 （e =arguments[0]）
+                    //e.preventDefault();
+                    //方法3 直接返回
+                    return false;
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <a href="http://www.baidu.com" id="al">百度</a>
+</body>
+</html>
