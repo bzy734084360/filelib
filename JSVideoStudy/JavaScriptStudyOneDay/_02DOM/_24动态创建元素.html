@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        onload = function () {
+
+            //创建层的代码
+            document.getElementById('btn').onclick = function () {
+
+                //创建元素
+
+                //创建一个层
+                var dvObj = document.createElement('div');
+                dvObj.id = 'dv';
+                //设置样式
+                dvObj.style.width = '300px';
+                //dvObj.style.height = '200px';
+                //在CSS中多个单词用-连接，但是JS中-去掉，后面单词首字母大写
+                dvObj.style.backgroundColor = 'yellow';
+
+                //把元素添加到body中（追加到层中）
+
+                document.body.appendChild(dvObj);
+
+            };
+            //创建按钮的代码
+            var i = 0;
+            document.getElementById('btnAddbtn').onclick = function () {
+                i++;
+                //不是创建按钮
+                var inputObj = document.createElement('input');
+                inputObj.type = 'button';
+                inputObj.value = '我是按钮' + i;
+                document.getElementById('dv').appendChild(inputObj);
+            };
+            //把按钮不是追加,而是添加到每个按钮的前面
+            document.getElementById('btnInsertbtn').onclick = function () {
+                i++;
+                //不是创建按钮
+                var inputObj = document.createElement('input');
+                inputObj.type = 'button';
+                inputObj.value = '我是按钮' + i;
+                var dvObj1 = document.getElementById('dv');//获取该层
+
+                dvObj1.insertBefore(inputObj, dvObj1.firstChild);
+            };
+            //删除所有按钮
+            document.getElementById('btnDeletebtn').onclick = function () {
+                var dvObj2 = document.getElementById('dv');
+                while (dvObj2.firstChild) {//判断层中有没有第一个元素
+                    dvObj2.removeChild(dvObj2.firstChild);
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="创建一个层" id="btn" />
+    <input type="button" name="name" value="创建一个按钮" id="btnAddbtn" />
+    <input type="button" name="name" value="插入一个按钮" id="btnInsertbtn" />
+    <input type="button" name="name" value="删除所有的层中的按钮" id="btnDeletebtn" />
+</body>
+</html>

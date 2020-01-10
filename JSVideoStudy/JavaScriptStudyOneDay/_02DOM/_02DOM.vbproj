@@ -109,6 +109,11 @@
     <Content Include="_17关于粘贴板.html" />
     <Content Include="_18设置粘贴板中的内容.html" />
     <Content Include="_19签入广告的代码.html" />
+    <Content Include="_20获取标签.html" />
+    <Content Include="_21按钮练习.html" />
+    <Content Include="_22按钮禁用练习.html" />
+    <Content Include="_23美女时钟.html" />
+    <Content Include="_24动态创建元素.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />

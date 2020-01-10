@@ -26,7 +26,7 @@
                     var txt = window.clipboardData.getData('text') + '本文出自于';
                     alert(txt);
                     //设置内容
-                    clipboardData.setData('text', txt);
+                    window.clipboardData.setData('text', txt);
                 }, 100)
                 ////获取粘贴板中的内容
                 //var txt = clipboardData.getData('text') + '本文出自于xxx';

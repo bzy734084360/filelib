@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        //获取页面中的标签(元素)用下面的方式：
+        //要获取到页面中的标签必须要等到页面加载完
+        onload = function () {
+            //方式1
+            //通过元素ID获取对象
+            //获取到按钮对象
+            //var btnObj = document.getElementById('btn');
+            //alert(btnObj.value);
+            //方式2
+            //通过元素name 获取对象的集合(数组)
+            //var txts = document.getElementsByName('n');
+            //for (var i = 0; i < txts.length; i++) {
+            //    //判断是不是文本框
+            //    if (txts[i].type == 'text') {
+            //        alert(txts[i].value);
+            //    }
+            //}
+            //第三种 通过获取标签的类型获取到对象集合
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                alert(inputs[i].value);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" name="n" value="按钮啊" id="btn" />
+    <input type="text" name="n" value="1" />
+    <input type="text" name="n" value="2" />
+    <input type="text" name="n" value="3" />
+    <input type="text" name="n" value="4" />
+    <input type="text" name="n" value="5" />
+</body>
+</html>
