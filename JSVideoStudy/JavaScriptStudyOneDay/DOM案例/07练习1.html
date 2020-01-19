@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //案例1：创建三个输入文本框，当光标离开文本框的时候如果文本框为空，
+        //则将文本框背景色设置为红色，如果不为空则为白色。
+        onload = function () {
+            document.getElementById('btn').onclick = function () {
+                var texts = document.getElementsByName('name');
+                //可通过获取标签的方式获取所有文本框
+                //var inputs = document.getElementsByTagName('input');
+                for (var i = 0; i < texts.length; i++) {
+                    texts[i].onblur = function () {
+                        if (this.value.length == 0) {
+                            this.style.backgroundColor = 'red';
+                        }
+                        else {
+                            this.style.backgroundColor = '';
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" name="name" value="" id="txt1" />
+        <input type="text" name="name" value="" id="txt2" />
+        <input type="text" name="name" value="" id="txt3" />
+        <input type="text" name="name" value="" id="txt4" />
+        <input type="button" name="btnname" value="变色" id="btn" />
+    </div>
+
+</body>
+</html>

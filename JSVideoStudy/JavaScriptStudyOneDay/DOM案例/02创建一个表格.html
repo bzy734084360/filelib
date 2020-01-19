@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var dic = { "百度": "http://www.baidu.com", "谷歌": "http://www.goole.com" };
+        onload = function () {
+            document.getElementById('btn').onclick = function () {
+                //创建一个单元格
+                var tbObj = document.createElement('table');
+                //边框属性
+                tbObj.border = '1';
+                for (var item in dic) {
+                    //创建行
+                    var trObj = document.createElement('tr');
+                    //创建单元格
+                    var tbObj1 = document.createElement('td');
+                    tbObj1.innerText = item;
+                    //创建单元格
+                    var tbObj2 = document.createElement('td');
+                    tbObj2.innerHTML = '<a href="' + dic[item] + '" >' + item + '</a>';
+                    //单元格添加到行中
+                    trObj.appendChild(tbObj1);
+                    trObj.appendChild(tbObj2);
+                    //行添加到表中
+                    tbObj.appendChild(trObj);
+                }
+                //把表格添加到body中
+                document.body.appendChild(tbObj);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="创建表格" id="btn" />
+</body>
+</html>

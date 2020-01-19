@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var dic = { "百度": "http://www.baidu.com", "谷歌": "http://www.goole.com" };
+        onload = function () {
+            document.getElementById('btnCreate').onclick = function () {
+                //创建表格
+                var tbObj = document.createElement('table');
+                tbObj.border = 1;
+                for (var key in dic) {
+                    //根据表创建行
+                    var trObj = tbObj.insertRow(-1);//-1表示追加
+                    //根据行创建列
+                    var tdObj1 = trObj.insertCell(-1);
+                    tdObj1.innerText = key;
+                    var tdObj2 = trObj.insertCell(-1);
+                    tdObj2.innerHTML = '<a href="' + dic[key] + '">' + key + '</a>';
+                }
+                //添加到body中
+                document.body.appendChild(tbObj);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="创建表格" id="btnCreate" />
+</body>
+</html>
