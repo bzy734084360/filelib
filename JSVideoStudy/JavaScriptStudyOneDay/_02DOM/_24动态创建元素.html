@@ -30,16 +30,16 @@
             var i = 0;
             document.getElementById('btnAddbtn').onclick = function () {
                 i++;
-                //不是创建按钮
+                //不是创建按钮对象
                 var inputObj = document.createElement('input');
                 inputObj.type = 'button';
                 inputObj.value = '我是按钮' + i;
                 document.getElementById('dv').appendChild(inputObj);
             };
-            //把按钮不是追加,而是添加到每个按钮的前面
+            //插入按钮
             document.getElementById('btnInsertbtn').onclick = function () {
                 i++;
-                //不是创建按钮
+                //不是创建按钮对象
                 var inputObj = document.createElement('input');
                 inputObj.type = 'button';
                 inputObj.value = '我是按钮' + i;
