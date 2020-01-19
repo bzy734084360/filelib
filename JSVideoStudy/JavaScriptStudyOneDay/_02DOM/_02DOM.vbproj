@@ -92,7 +92,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.css" />
+    <Content Include="css\1.css" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.gif" />
     <Content Include="Web.config" />
