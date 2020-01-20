@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+            //全选按钮添加事件
+            document.getElementById('btnAll').onclick = function () {
+                var cks = document.getElementsByName('ck1');
+                for (var i = 0; i < cks.length; i++) {
+                    cks[i].checked = true;
+                }
+            };
+            //全不选按钮添加事件
+            document.getElementById('btnNoAll').onclick = function () {
+                var cks = document.getElementsByName('ck1');
+                for (var i = 0; i < cks.length; i++) {
+                    cks[i].checked = false;
+                }
+            };
+            //反选按钮添加事件
+            document.getElementById('btnFanXuan').onclick = function () {
+                var cks = document.getElementsByName('ck1');
+                for (var i = 0; i < cks.length; i++) {
+                    //比较弱鸡的写法
+                    //if (cks[i].checked) {
+                    //    cks[i].checked = false;
+                    //}
+                    //else {
+                    //    cks[i].checked = true;
+                    //}
+                    cks[i].checked = !cks[i].checked;
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="全选" id="btnAll" />
+    <input type="button" name="name" value="全不选" id="btnNoAll" />
+    <input type="button" name="name" value="反选" id="btnFanXuan" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <input type="checkbox" name="ck1" value="1" />吃饭1
+    <input type="checkbox" name="ck1" value="2" />吃饭2
+    <input type="checkbox" name="ck1" value="3" />吃饭3
+    <input type="checkbox" name="ck1" value="4" />吃饭4
+    <input type="checkbox" name="ck1" value="5" />吃饭5
+    <input type="checkbox" name="ck1" value="6" />吃饭6
+
+
+</body>
+</html>

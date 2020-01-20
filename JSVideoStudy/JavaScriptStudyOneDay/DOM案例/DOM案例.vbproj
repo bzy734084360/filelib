@@ -99,6 +99,26 @@
     <Content Include="05设置类样式.html" />
     <Content Include="06能力检测.html" />
     <Content Include="07练习1.html" />
+    <Content Include="08表格隔行变色.html" />
+    <Content Include="09点的时候变色.html" />
+    <Content Include="10层的显示和隐藏.html" />
+    <Content Include="11超链接显示图片.html" />
+    <Content Include="12添加自定义属性.html" />
+    <Content Include="13动态创建一个登录窗口.html" />
+    <Content Include="14小图显示大图.html" />
+    <Content Include="15全选和全不选.html" />
+    <Content Include="16球队列表练习.html" />
+    <Content Include="17文本框练习.html" />
+    <Content Include="18关于提交.html" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.gif" />
+    <Content Include="mv\1-1.jpg" />
+    <Content Include="mv\1.jpg" />
+    <Content Include="mv\11显示和隐藏.htm" />
+    <Content Include="mv\2-1.jpg" />
+    <Content Include="mv\2.jpg" />
+    <Content Include="mv\3-1.jpg" />
+    <Content Include="mv\3.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

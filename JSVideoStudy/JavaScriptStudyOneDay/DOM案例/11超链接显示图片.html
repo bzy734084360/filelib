@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+
+            //动态创建的
+            document.getElementById('al').onmousemove = function () {
+                //alert('嘎嘎');
+                //层只创建一次
+                if (document.getElementById('dv')) {
+
+                }
+                else {
+                    //创建层
+                    var dvObj = document.createElement('div');
+                    dvObj.id = 'dv';
+                    //创建图片
+                    var imgObj = document.createElement('img');
+
+                    imgObj.src = 'images/2.gif';
+
+                    //图片加到dv中
+                    dvObj.appendChild(imgObj);
+
+                    //脱离文档流
+                    dvObj.style.position = 'absolute';
+                    //距离左边距离
+                    dvObj.style.left = this.offsetLeft + 'px';
+                    //距离上边距离
+                    dvObj.style.top = this.offsetTop + this.offsetHeight + 'px';
+
+                    //层加到body中
+                    document.body.appendChild(dvObj);
+                }
+
+            };
+            document.getElementById('al').onmouseout = function () {
+
+                if (document.getElementById('dv')) {
+                    document.body.removeChild(document.getElementById('dv'));
+                    //document.getElementById('dv').remove();
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA <a id="al" href="http://www.baidu.com">百度一下</a>啊啊AAAAAAAAAAAAAA啊
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--<img src="images/1.jpg" alt="Alternate Text" />-->
+</body>
+</html>

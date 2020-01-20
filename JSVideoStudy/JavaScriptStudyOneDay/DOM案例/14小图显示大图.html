@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var datas = {
+            "mv/1-1.jpg": ["mv/1.jpg", "老牛", "163cm"],
+            "mv/2-1.jpg": ["mv/2.jpg", "老马", "170cm"],
+            "mv/3-1.jpg": ["mv/3.jpg", "老蒋", "150cm"]
+        };
+        onload = function () {
+            //加载所有的小图
+            //创建图片
+            for (var key in datas) {
+                var imSmall = document.createElement('img');
+                imSmall.src = key;
+                //坑 添加自定义属性 来获取键的值
+                imSmall.setAttribute('key', key);
+                imSmall.style.marginLeft = '10px';
+                imSmall.style.cursor = 'pointer';
+                //鼠标进入事件
+                imSmall.onmouseover = function () {
+                    var dvObj = document.getElementById('dvBig');
+                    dvObj.style.display = 'block';
+                    dvObj.style.position = 'absolute';
+                    dvObj.style.left = this.offsetLeft + 'px';
+                    dvObj.style.top = this.offsetTop + this.offsetHeight + 'px';
+                    var bigImgs = datas[this.getAttribute('key')];
+                    for (var i = 0; i < bigImgs.length; i++) {
+                        document.getElementById('dvBig').style.display = 'block';
+                        document.getElementById('imBig').src = bigImgs[0];
+                        document.getElementById('spName').innerText = bigImgs[1];
+                        document.getElementById('spHeight').innerText = bigImgs[2];
+
+                    }
+                };
+                //把小图添加到层中
+                document.getElementById('dvSmall').appendChild(imSmall);
+            }
+        };
+    </script>
+</head>
+<body>
+    <div id="dvSmall">
+
+    </div>
+    <div id="dvBig" style="background-color:orange; border:1px solid green; width:630px;
+ display:none">
+        大头像：<br />
+        <img src="#" alt="Alternate Text" id="imBig" />
+        姓名：<span id="spName"></span><br />
+        身高：<span id="spHeight"></span>
+    </div>
+</body>
+</html>
