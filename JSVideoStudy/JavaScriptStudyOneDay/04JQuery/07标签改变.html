@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('p').click(function () {
+                $(this).text('我心疼坏了').css('color', 'red');
+            }).mouseover(function () {
+                $(this).css('cursor', 'pointer');
+            }).mouseout(function () {
+                $(this).css('color', '');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>AAAA</p>
+    <p>BBBB</p>
+    <p>CCCC</p>
+    <p>DDDD</p>
+</body>
+</html>

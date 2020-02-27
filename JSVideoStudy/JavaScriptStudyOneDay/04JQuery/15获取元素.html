@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            width: 300px;
+            height: 20px;
+            background-color: lawngreen;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                // eq(3)获取索引为3的元素改变样式
+                $('div:eq(3)').css('backgroundColor', 'red');
+            });
+            $('#btn2').click(function () {
+                // lt(3)获取元素小于3的索引元素，改变样式
+                $('div:lt(3)').css('backgroundColor', 'red');
+            });
+            $('#btn3').click(function () {
+                // eq(3)获取索引大于3的元素改变样式
+                $('div:gt(3)').css('backgroundColor', 'red');
+            });
+            $('#btn4').click(function () {
+                //索引大于3小于2的div标签改变
+                //原理先筛选大于3的然后在大于3的结果集中再次筛选小于2的结果
+                $('div:gt(3):lt(2)').css('backgroundColor', 'red');
+            });
+            $('#btn5').click(function () {
+                $(':header').css('backgroundColor', 'red');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">索引等于3的div标签改变</button>
+    <button id="btn2">索引小于3的div标签改变</button>
+    <button id="btn3">索引大于3的div标签改变</button>
+    <button id="btn4">索引大于3小于2的div标签改变</button>
+    <button id="btn5">改变所有h标签的样式</button>
+    <h1>H1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

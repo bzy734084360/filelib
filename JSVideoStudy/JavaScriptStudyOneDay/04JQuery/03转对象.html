@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+
+
+            document.getElementById('btn').onclick = function () {
+                //dvObj为dom对象
+                var dvObj = document.getElementById('dv');
+                //dom对象转换为JQ对象
+                var jq = $(dvObj);
+                //jq对象转换成dom
+                //var dd = jq.get(0);
+                //或者
+                var dd = jq[0];
+
+                
+
+                //jquery写法
+
+
+                //方法2
+                //链式编程
+                $(dvObj).css('width', '300px').css('height', '200px').css('backgroundColor', 'green')
+                    .text('<font color="red" ,size="7" >哈哈哈</font>');
+                //text  $(xxx)
+
+                //方法1
+                //$(dvObj).css('width', '300px');
+                //$(dvObj).css('height', '200px');
+                //$(dvObj).css('backgroundColor', 'green');
+                //$(dvObj).text('<font color="red" ,size="7" >哈哈哈</font>');
+                //dom JS中的写法
+                //dvObj.style.width = '300px';
+                //dvObj.style.height = '20px';
+                //dvObj.style.backgroundColor = 'yellow';
+            };
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示效果" id="btn" />
+    <div id="dv">
+
+    </div>
+</body>
+</html>

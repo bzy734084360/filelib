@@ -110,6 +110,11 @@
     <Content Include="16球队列表练习.html" />
     <Content Include="17文本框练习.html" />
     <Content Include="18关于提交.html" />
+    <Content Include="20邮箱匹配.html" />
+    <Content Include="21切空格.html" />
+    <Content Include="22密码强弱度.html" />
+    <Content Include="23回车事件tab跳转.html" />
+    <Content Include="24大项目.html" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.gif" />
     <Content Include="mv\1-1.jpg" />
@@ -120,6 +125,7 @@
     <Content Include="mv\3-1.jpg" />
     <Content Include="mv\3.jpg" />
     <Content Include="Web.config" />
+    <Content Include="19正则表达式.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />

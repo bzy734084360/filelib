@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <style>
+        .cls {
+            width: 100px;
+            height: 50px;
+            background-color: orange;
+        }
+    </style>
+    <script>
+        $(function () {
+
+            $('#btn').click(function () {
+                //通过标签和类获得某个元素
+                //$('div.cls').css('background', 'green');
+                //多条件选择器
+                $('p,strong,div.cls').css('backgroundColor', 'red');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="效果" id="btn" />
+    <p>
+        这是P
+    </p>
+    <strong>
+        这是strong
+    </strong>
+    <div class="cls">
+    </div>
+    <div style="width:300px; height:200px;background-color:aqua;">
+
+    </div>
+</body>
+</html>

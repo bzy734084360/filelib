@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#tb td').mouseover(function () {
+                $(this).text('★').prevAll('td').text('★');
+            });
+            //效果不算完美有优化空间
+            $('#tb td').mouseout(function () {
+                $(this).text('☆').nextAll('td').text('☆');
+            });
+        });
+    </script>
+</head>
+<body>
+    <table border="1" id="tb" style="cursor:pointer;">
+        <tr>
+            <td>☆</td>
+            <td>☆</td>
+            <td>☆</td>
+            <td>☆</td>
+            <td>☆</td>
+        </tr>
+    </table>
+</body>
+</html>

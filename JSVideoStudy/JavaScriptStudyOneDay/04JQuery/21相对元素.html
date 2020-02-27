@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //绝对定位
+                //$('div p').css('color', 'red');
+                //相对定位
+                $('p', $('div')).css('color', 'red');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">显示效果</button>
+    <div style="width:300px;height:150px;background-color:aquamarine;">
+        <p> 这是P</p>
+    </div>
+</body>
+</html>

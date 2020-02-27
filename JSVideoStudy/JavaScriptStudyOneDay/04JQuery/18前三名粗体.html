@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#p1').click(function () {
+                $('#ul1 li:lt(3)').css('fontWeight', 'bolder');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p1">前三名变粗体</p>
+    <ul id="ul1">
+        <li>乔峰</li>
+        <li>郭靖</li>
+        <li>芙蓉</li>
+        <li>黄药师</li>
+    </ul>
+</body>
+</html>

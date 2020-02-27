@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                $('#tb tr:first').css('fontSize', '30px');
+                $('#tb tr:last').css('color', 'red');
+                $('#tb tr:gt(0):lt(3)').css('fontSize', '20px');
+                $('#tb tr:gt(0):odd').css('color', 'red');
+                //var sumNum = 0;
+                //var arr = $('tr:gt(0)');
+                //$.map(arr, function (value, index) {
+
+                //});
+                //alert(sumNum);
+            });
+        });
+    </script>
+</head>
+<body>
+    <table border="1" id="tb">
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>99</td>
+        </tr>
+    </table>
+    <button id="btn">显示效果</button>
+</body>
+</html>

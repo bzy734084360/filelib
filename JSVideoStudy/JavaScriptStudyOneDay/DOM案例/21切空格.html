@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var msg = '      我是字符串        ';
+        var reg = /^\s+/;
+        msg = msg.replace(/^\s+/, '').replace(/\s+$/, '');
+        alert('===' + msg + '===');
+        //Trim去空格函数
+        function trim(name) {
+            return name.replace(/^\s+/, '').replace(/\s+$/, '')
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
