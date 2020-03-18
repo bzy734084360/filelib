@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        //document 转换成JQuery对象
+        //var jq = jQuery(document);
+        //var jq = $(document);
+
+        //页面加载后执行
+        //页面加载事件
+
+        //原生：
+        //指：所有标签数据加载完成后，才进行调用加载方法
+        //事件注册，只会执行最后一个
+        //window.onload = function () {
+        //    alert('页面加载完成1');
+        //};
+        //window.onload = function () {
+        //    alert('页面又加载了？');
+        //};
+        //JQ
+        //指加载常用标签后进行加载方法，效率高
+        //两个方法可以一起调用
+        //$(document).ready(function () {
+        //    alert('页面加载完成2');
+        //});
+        //$(document).ready(function () {
+        //    alert('页面又加载了');
+        //});
+        //无效 3.4.1
+        //$(window).load(function () {
+        //    alert('加载了');
+        //});
+
+
+        //最简便写法
+        $(function () {
+            alert('加载完了');
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

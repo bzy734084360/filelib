@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //
+                $('#tb tr:odd').css('color', 'yellow');
+                $('#tb tr:even').css('color', 'red');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">变色</button>
+    <table border="1" id="tb">
+        <tr>
+            <td>乔峰</td>
+            <td>杨过</td>
+        </tr>
+        <tr>
+            <td>乔峰</td>
+            <td>杨过</td>
+        </tr>
+        <tr>
+            <td>乔峰</td>
+            <td>杨过</td>
+        </tr>
+        <tr>
+            <td>乔峰</td>
+            <td>杨过</td>
+        </tr>
+        <tr>
+            <td>乔峰</td>
+            <td>杨过</td>
+        </tr>
+        <tr>
+            <td>乔峰</td>
+            <td>杨过</td>
+        </tr>
+    </table>
+</body>
+</html>

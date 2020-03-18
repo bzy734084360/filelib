@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btnAdd').click(function () {
+                //为某个元素添加类选择器的样式
+                $('#p').addClass('cls');
+            });
+            $('#btnDelete').click(function () {
+                //移除某个元素类选择器的样式
+                $('#p').removeClass();
+            });
+        });
+    </script>
+    <style>
+        .cls {
+            background-color: aquamarine;
+            width: 300px;
+            height: 200px;
+        }
+
+        p {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" name="name" value="添加样式" id="btnAdd" />
+    <input type="button" name="name" value="移除样式" id="btnDelete" />
+    <p id="p">我是P标签</p>
+</body>
+</html>

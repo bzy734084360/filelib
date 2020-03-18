@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //加空格 表示的是，该表单中内部被禁用的元素，如果没有空格，则表示被禁用的表单
+                //$('form :disabled').css('backgroundColor', 'red');
+                //与上效果相同
+                //$('form :input[disabled]').css('backgroundColor', 'red');
+                //被启用的表单内所有元素
+
+                //$('form :enabled').css('backgroundColor', 'red');
+                //$('input:checked').css('color', 'red');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示效果" id="btn" />
+    <div>
+        <input type="checkbox" name="name" value="1" checked="checked" />吃饭
+        <input type="checkbox" name="name" value="2" style="color:aqua;" />睡觉
+        <input type="checkbox" name="name" value="3" />打豆豆
+    </div>
+    <form action="" method="" id="fm1">
+        <input type="button" name="name" value="按钮" disabled="disabled" />
+    </form>
+    <form action="" method="" id="fm2">
+        <input type="button" name="name" value="按钮2" />
+    </form>
+</body>
+</html>

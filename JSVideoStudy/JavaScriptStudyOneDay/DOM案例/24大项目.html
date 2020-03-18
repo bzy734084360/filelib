@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var keyWords = {
+            "传智播客": ["传智播客java视频", "传智播客.net视频", "传智播客php视频"],
+            "杨忠科": ["杨忠科的视频", "杨忠科的微博", "杨忠科的邮箱"],
+            "杨": ["杨利伟", "杨振宇", "杨过"],
+            "杨忠": ["杨忠科", "杨忠学", "杨忠爱国"]
+        };
+
+        setInterval(function () {
+            document.getElementById('txt').onchange();
+        }, 500);
+
+        onload = function () {
+            //触发事件
+            //onchange 事件需要手动点击
+            //
+            document.getElementById('txt').onchange = function () {
+
+                if (document.getElementById('dv')) {
+                    document.body.removeChild(document.getElementById('dv'));
+                }
+                //else {
+                //文本框的值在键值对中存在
+                if ((keyWords[this.value])) {
+                    //创建层
+                    var dvObj = document.createElement('div');
+                    dvObj.id = 'dv';
+                    dvObj.style.width = '300px';
+                    dvObj.style.height = '200px';
+                    dvObj.style.border = '1px solid green';
+                    dvObj.style.position = 'absolute';
+                    dvObj.style.left = this.offsetLeft + 'px';
+                    dvObj.style.top = this.offsetTop + this.offsetHeight + 'px';
+
+                    //添加创建无序列表
+                    var ulObj = document.createElement('ul');
+                    //干掉无序列表的中的·
+                    ulObj.style.listStyleType = 'none';
+                    ulObj.style.margin = '0';
+                    ulObj.style.padding = '0';
+                    for (var i = 0; i < keyWords[this.value].length; i++) {
+                        //创建li
+                        var liObj = document.createElement('li');
+                        liObj.innerText = keyWords[this.value][i];//显示每一项内容
+                        liObj.style.marginTop = '8px';
+                        liObj.style.cursor = 'pointer';
+                        //高亮显示
+                        liObj.onmouseover = function () {
+                            this.style.backgroundColor = 'yellow';
+                        };
+                        liObj.onmouseout = function () {
+                            this.style.backgroundColor = '';
+                        };
+                        ulObj.appendChild(liObj);
+                    }
+
+                    dvObj.appendChild(ulObj);
+
+                    document.body.appendChild(dvObj);
+                }
+                //}
+            };
+        };
+
+
+    </script>
+</head>
+<body>
+    请出入搜索内容
+    <input type="text" name="name" value="" id="txt" />
+    <input type="button" name="name" value="百度一下" />
+</body>
+</html>

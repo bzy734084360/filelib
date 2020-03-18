@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+
+                $(this).text() == '关灯' ? $(this).text('开灯') : $(this).text('关灯');
+                //$('body').addClass('cls');
+
+                if ($('body').hasClass('cls')) {
+                    $('body').removeClass('cls');
+                }
+                else {
+                    $('body').addClass('cls');
+                    //tpggeClass 位置定义
+                    //$('body').toggleClass('cls');
+                }
+                //if (this.innerText == '关灯') {
+                //    this.innerText = '开灯';
+                //}
+                //else {
+                //    this.innerText = '关灯';
+                //}
+            });
+        });
+    </script>
+    <style>
+        .cls {
+            background-color: Black;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">关灯</button>
+</body>
+</html>

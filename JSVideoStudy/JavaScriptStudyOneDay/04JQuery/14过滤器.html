@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: orange;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //无法改变首个ul标签样式
+                //$('ul').first().css('color', 'red');
+                //改变首个ul标签样式
+                //$('ul :first').css('color', 'red');
+                //改变ul标签中首个li标签的样式
+                //$('ul li:first').css('color', 'red');
+                //偶数，显示奇数效果
+                //$('ul li:even').css('color', 'red');
+                $('ul li:odd').css('color', 'orange');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">显示效果</button>
+    <ul>
+        <li>AA</li>
+        <li>BB</li>
+        <li>CC</li>
+        <li>DD</li>
+        <li>EE</li>
+        <li>FF</li>
+        <li>HH</li>
+        <li>LL</li>
+    </ul>
+</body>
+</html>

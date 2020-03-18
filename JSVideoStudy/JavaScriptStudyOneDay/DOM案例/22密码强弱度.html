@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        onload = function () {
+
+            //获取所有的td
+            var tds = document.getElementById('tb').getElementsByTagName('td');
+
+            document.getElementById('txt').onkeyup = function () {
+                //alert('a');
+                //坑
+                for (var i = 0; i < tds.length; i++) {
+                    tds[i].style.backgroundColor = '';
+                }
+                if (this.value.length > 0) {
+                    //判断密码的级别
+                    var result = checkPwd(this.value);
+                    switch (result) {
+                        case 0:
+                        case 1:
+                            //弱
+                            tds[0].style.backgroundColor = 'red';
+                            break;
+                        case 2:
+                            //中
+                            tds[0].style.backgroundColor = 'green';
+                            tds[1].style.backgroundColor = 'green';
+                            break;
+                        case 3:
+                            //强
+                            tds[0].style.backgroundColor = 'blue';
+                            tds[1].style.backgroundColor = 'blue';
+                            tds[2].style.backgroundColor = 'blue';
+                            break;
+                        default:
+                    }
+                }
+            };
+
+            //先写方法,判断字符串中是否有字母，数字，特殊符号
+            function checkPwd(msg) {
+
+                var lvl = 0;
+                if (msg.match(/[0-9]/)) {
+                    lvl++;
+                }
+                if (msg.match(/[A-Za-z]/)) {
+                    lvl++;
+                }
+                if (msg.match(/[^0-9a-zA-Z]/)) {
+                    lvl++;
+                }
+                if (msg.length < 6) {
+                    lvl--
+                }
+                return lvl;
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="text" name="name" value="" id="txt" />
+    <table border="1" style="width:300px; height:35px;text-align:center" id="tb">
+        <tr>
+            <td>弱</td>
+            <td>中</td>
+            <td>强</td>
+        </tr>
+    </table>
+</body>
+</html>

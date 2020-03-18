@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: orangered;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //属性过滤选择器
+                //获得有ID的层
+                //$('div[id]').css('backgroundColor', 'blue');
+                //获取有ID属性的层，ID的值必须是dv2
+                //$('div[id=dv2]').css('backgroundColor', 'blue');
+                //获取属性name 值为name的表单
+                //$('input[name=name]').css('backgroundColor', 'blue');
+                //！取非
+                //$('input[name！=name]').css('backgroundColor', 'blue');
+                //必须以name开头的
+                //$('input[name^=name]').css('backgroundColor', 'blue');
+                //必须以name结尾的
+                //$('input[name$=name]').css('backgroundColor', 'blue');
+                //包含name的
+                //$('input[name*=name]').css('backgroundColor', 'blue');
+                //有name属性和value属性
+                //$('input[name][value]').css('backgroundColor', 'blue');
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">显示效果</button>
+    <input type="text" name="name" value="" />
+    <input type="text" name="2name2" value="" />
+    <input type="text" name="name3" value="" />
+    <input type="text" name="name4" value="" />
+    <div id=""></div>
+    <div></div>
+    <div id="dv2"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //层后面的第一个标签(若指定标签则，后面第一个标签必须为指定，等同于 'div+p')
+                //$('div').next('p').css('color', 'red');
+                //层后面所有的标签
+                //$('div').nextAll().css('color', 'blue');
+                //层前面的第一个元素
+                //$('div').prev().css('color', 'blue');
+                //层前面所有元素
+                //$('div').prevAll().css('color', 'blue')
+                //兄弟元素，除自己外，所有元素都会改变
+                //会短链
+                $('#p1').siblings().css('color', 'blue');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示效果" id="btn" />
+    <p id="p1">p1</p>
+    <p>p2</p>
+    <div style="width:300px; height:200px;background-color:aquamarine;">
+        <p>这是div p1</p>
+        <p>这是div p2</p>
+    </div>
+    <strong>content</strong>
+    <p>p3</p>
+    <p>p4</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        //例题：点击按钮 改变层的样式，并且在层中来个font标签显示样式
+        //页面加载
+        $(function () {
+            $('#btn').click(function () {
+                $('#dv').css('width', '300px').css('height', '200px').css
+                    ('backgroundColor', 'orange').html('<font color="red" size="7">我是font标签</font>');
+                $(this).val('嘎嘎');
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="哈哈" id="btn" />
+    <div class="cls" id="dv">
+
+    </div>
+</body>
+</html>
