@@ -1,0 +1,18 @@
+body {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 2;
+  font-family: "Roboto", Arial, sans-serif;
+	webkit-box-sizing: border-box;
+  color: #666666;
+background-image:url(../img/timg.jpg);
+}
+
+p.tip span {
+	font-weight:bold;
+	color:#ff9955;
+	}
+p.tip2 span{
+	font-weiight:bold;
+	color:#ff7895
+	}

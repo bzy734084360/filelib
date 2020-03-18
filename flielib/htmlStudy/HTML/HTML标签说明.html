@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+	h1{color:red}
+	p{color:blue;font-size:25px}
+		</style>
+		<!-- 使用外部样式表-->
+		<link rel="stylesheet" type="text/css"
+		href="./css/style.css">
+			<!-- 下列元素不明确意义-->
+			<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+			<meta http-equiv="Content-Language" content="zh-cn" />
+		</head>
+		<body background="./img/timg.jpg">
+			<!-- 注释 -->
+			<!--HTML元素 -->
+			<!--HTML标题 -->
+			<!--HTML属性 align、bgcolor  应避免使用这些属性-->
+			<!-- HTML样式 style -->
+			<h1 style="text-align:center">HTML元素</h1>
+			<h1 align="center">h1元素 标题元素 居中属性</h1>
+			<h2>h2元素 标题元素</h2>
+			<h3>h3元素 标题元素</h3>
+			<h4>h4元素 标题元素</h4>
+			<h5>h5元素 标题元素</h5>
+			<h6>h6元素 标题元素</h6>
+			<br>br元素 空行</br>
+			<hr>hr元素  分割线</hr>
+			<!--HTML段落 -->
+			<h1 style="text-align:center">HTML段落</h1>
+			<p>p标签 段落</p>
+			<p align="center">p元素 换行<br/> 第二行</p>
+			<p style="font-family:verdana;color:red;text-align:center">
+			春眠不觉晓
+				处处闻啼鸟
+					夜来风雨声
+						花落知多少
+			</p>
+			<p style="font-family:times;color:green; font-size:40px">此处省略了多余的空格和换行</p>
+			<hr/>
+			<h1 style="text-align:center">HTML链接</h1>
+			<a href="http://www.baidu.com/">a元素 链接 百度一下</a>
+			<hr/>
+			<h1 style="text-align:center">图片</h1>
+			<img src="./img/1.png" width="100" height="100" >img图片元素</img>
+			<br/>
+			<a href="http://www.baidu.com/" target="_blank">
+				<img src="./img/2.png" border="0"/>
+			</a>
+			<br/>
+			<a href="#down">底部</a>
+			<hr/>
+			<h1 style="text-align:center">HTML文本格式化</h1>
+			<!-- HTML文本格式化：开始-->
+			<b>文本格式化：b元素 定义粗体文本</b>
+			<br/>
+			<big>文本格式化：big元素 定义大字号</big>
+			<br/>
+			<em>文本格式化：em元素 定义着重文字</em>
+			<br/>
+			<i>文本格式化：i元素 定义斜体字</i>
+			<br/>
+			<small>文本格式化：small元素 定义小号字</small>
+			<br/>
+			<strong>文本格式化：strong元素 定义加重语气</strong>
+			<br/>
+			<sub>文本格式化：sub元素 定义下标字</sub>
+			<br/>
+			<sup>文本格式化：sup元素 定义上标字</sup>
+			<br/>
+			<ins>文本格式化：ins元素 定义插入字</ins>
+			<br/>
+			<del>文本格式化：del元素 定义删除字</del>
+			<!-- HTML文本格式化：结束-->
+			<hr/>
+			<h1 style="text-align:center">HTML计算机输出标签</h1>
+			<!-- HTML计算机输出标签：开始-->
+			<code>计算机输出：code元素 定义计算机代码 不保留多余的空格和拆行</code>
+			<br/>
+			<code>var person = { firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue" }</code>
+			<br/>
+			<kbd>计算机输出：kbd元素 定义键盘码  </kbd>
+			<p>
+				<kbd>File | Open...</kbd>
+			</p>
+			<br/>
+			<samp>计算机输出：samp元素 定义计算机代码样本</samp>
+			<br/>
+			<tt>计算机输出：tt元素	定义打字机代码</tt>
+			<br/>
+			<var>计算机输出：var元素	定义变量</var>
+			<p>var元素定义数学变量</p>
+			<p>
+				<var>E = m c<sup>2</sup>
+				</var>
+			</p>
+			<br/>
+			<pre>计算机输出：pre元素	定义预格式文本</pre>
+			<pre style="font-family:verdana;color:red;text-align:left">
+			春眠不觉晓
+				处处闻啼鸟
+					夜来风雨声
+						花落知多少
+			</pre>
+			<!-- HTML计算机输出标签：结束-->
+			<hr/>
+			<!-- HTML引用、引用和术语定义：开始-->
+			<h1 style="text-align:center">HTML 引用、引用和术语定义</h1>
+			<p>引用、引用和术语定义：abbr元素  定义缩写->
+				<abbr title="test">t</abbr>
+			光标移到缩写上将会显示全称
+			</p>
+			<br/>
+			<acronym>引用、引用和术语定义:acronym 元素	定义首字母缩写AB</acronym>
+			<br/>
+			<acronym title="Study Every Day">SED</acronym>
+			<br/>
+			<address>引用、引用和术语定义:address 元素 定义地址 
+				<br/>
+		搜索:<a href="http://www.baidu.com/">百度一下</a>
+			</address>
+			<address>这是一个无下划线的链接 
+				<br/>
+		搜索:<a href="http://www.baidu.com/" style="text-decoration:none">百度一下</a>
+			</address>
+			<br/>
+			<bdo dir="rtl" >引用、引用和术语定义:bdo 元素 定义文字方向</bdo>
+			<br/>
+			<blockquote cite="">引用、引用和术语定义:blockquote 元素 定义长的引用
+		一般会对blockquote元素进行缩进处理。
+		比如这一行的内容超过上一行的内容长度则会缩进
+			</blockquote>
+			<br/>
+			<q>引用、引用和术语定义：q	元素	定义短的引用语</q>
+			<br/>
+			<cite>引用、引用和术语定义：cite 元素	定义引用、引证</cite>
+			<br/>
+			<dfn>引用、引用和术语定义：dfn 元素 定义一个定义项目</dfn>
+			<p>
+		 The <dfn title="World Health Organization">WHO</dfn>
+		  was founded in 1948.
+			</p>
+			<p>对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息</p>
+			<br/>
+			<p>
+				<dfn>
+					<abbr title="World Health Organization">WHO</abbr> 成立于1948年</dfn>
+			</p>
+			<!-- HTML引用、引用和术语定义：结束-->
+			<hr/>
+			<h1 style="text-align:center">HTML CSS</h1>
+			<p>head 中设定指定的内部样式表</p>
+			<a name="down"></a>
+		</body>
+	</html>
