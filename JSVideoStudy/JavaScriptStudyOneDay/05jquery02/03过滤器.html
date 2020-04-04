@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            //获取有ID 属性的层
+            //$('div[id]').css('backgroundColor', 'green');
+            //添加空格后 标识 层中有ID 元素的标签
+            //$('div [id]').css('backgroundColor', 'green');
+            $('div input[id]').css('backgroundColor', 'green');
+        });
+    </script>
+</head>
+<body>
+    <div style=" width:300px;height:200px;background-color:aqua;border:1px solid red" id="">
+        <input type="text" name="name" value="" />
+        <input type="text" name="name" value="" id="txt" />
+        <input type="text" name="name" value="" />
+    </div>
+    <!--标尺线-->
+    <hr color="red" />
+    <!-- size="5"  -->
+    <select ><!-- 改标签配合CSS 使用 不是很方便 -->
+        <option value="1">北京</option>
+        <option value="2">天津</option>
+        <option value="3">上海</option>
+        <option value="4">深圳</option>
+    </select>
+</body>
+</html>

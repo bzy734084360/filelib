@@ -68,10 +68,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="01表单过滤器.html" />
+    <Content Include="04元素的each.html" />
     <Content Include="02表单过滤器注意事项.html" />
+    <Content Include="03过滤器.html" />
+    <Content Include="06内容过滤器.html" />
+    <Content Include="07子元素过滤器.html" />
+    <Content Include="08常用的方法.html" />
+    <Content Include="09动态创建元素.html" />
+    <Content Include="10小广告.html" />
+    <Content Include="11动态创建表格.html" />
+    <Content Include="12无刷新评论.html" />
+    <Content Include="13清空元素.html" />
+    <Content Include="14练习题.html" />
+    <Content Include="15按钮是否可用.html" />
+    <Content Include="16文本框为空练习.html" />
+    <Content Include="17球队练习.html" />
+    <Content Include="18替换节点.html" />
+    <Content Include="19包裹元素的方法.html" />
+    <Content Include="20获取被选中的单选按钮的value值.html" />
+    <Content Include="21权限练习.html" />
     <Content Include="JQuery\jquery-3.4.1.js" />
     <Content Include="JQuery\jquery-3.4.1.min.js" />
     <Content Include="Web.config" />
+    <Content Include="05其他选择器.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

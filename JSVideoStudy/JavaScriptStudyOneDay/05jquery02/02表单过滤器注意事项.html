@@ -8,13 +8,13 @@
         $(function () {
             $('#btn').click(function () {
                 //加空格 表示的是，该表单中内部被禁用的元素，如果没有空格，则表示被禁用的表单
-                //$('form :disabled').css('backgroundColor', 'red');
+                $('form :disabled').css('backgroundColor', 'red');
                 //与上效果相同
-                //$('form :input[disabled]').css('backgroundColor', 'red');
+                $('form :input[disabled]').css('backgroundColor', 'red');
                 //被启用的表单内所有元素
 
-                //$('form :enabled').css('backgroundColor', 'red');
-                //$('input:checked').css('color', 'red');
+                $('form :enabled').css('backgroundColor', 'red');
+                $('input:checked').css('color', 'red');
             });
         });
     </script>

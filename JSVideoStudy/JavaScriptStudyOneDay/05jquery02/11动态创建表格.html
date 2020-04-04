@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            var dic = { "百度": "http://www.baidu.com", "谷歌": "http://www.goole.com" };
+            $('#btn').click(function () {
+                //创建一个表
+                var tbObj = $('<table border="1"></table>').appendTo($('body'));
+                for (var key in dic) {
+                    $('<tr><td>' + key + '</td><td><a href="' + dic[key] + '">' + key + '</a></td></tr>').appendTo(tbObj);
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="button" name="name" value="创建表格" id="btn" />
+</body>
+</html>

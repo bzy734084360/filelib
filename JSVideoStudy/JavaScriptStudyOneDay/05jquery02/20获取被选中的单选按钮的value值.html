@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //alert($(':radio:checked').val());
+                $(':radio:checked').each(function (index, ele) {
+                    alert($(ele).val());
+                })
+            });
+            $('#btn2').click(function () {
+                //$(':radio[value=1]').attr('checked', true);
+                $(':radio').val(['1', '2']);//让单选按钮选中
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示效果" id="btn" />
+    <input type="button" name="name" value="选中" id="btn2" />
+    <div>
+        <input type="radio" name="nam1e" value="1" />男
+        <input type="radio" name="name2" value="2" />女
+        <input type="radio" name="name3" value="3" />保密
+    </div>
+</body>
+</html>

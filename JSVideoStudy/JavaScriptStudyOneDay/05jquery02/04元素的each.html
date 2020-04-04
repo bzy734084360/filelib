@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+
+            $('#btn').click(function () {
+                var cks = $('div input:checked');
+                //alert(cks.val());
+                //alert(cks.length);
+                //for (var key in cks) {
+                //    alert();
+                //}
+                cks.each(function (index, ele) {
+                    //alert(arguments.length);
+                    //alert(index+'==='+v);
+                    alert($(ele).val());
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="显示Value值" id="btn" />
+    <div id="dv">
+        <input type="checkbox" name="name" value="1" checked="checked" />吃饭
+        <input type="checkbox" name="name" value="2" checked="checked" />睡觉奥
+        <input type="checkbox" name="name" value="4" checked="checked" />打豆豆
+        <input type="checkbox" name="name" value="5" />打篮球
+        <input type="checkbox" name="name" value="3" />大足球
+        <input type="checkbox" name="name" value="6" />大千秋
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //remove 层，及其内的元素
+                //$('#dv').remove();
+                //层存在，清空层内的所有元素
+                //$('#dv').empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="清空元素" id="btn" />
+    <div id="dv" style="width:200px;height:150px;border:2px solid red">
+        <input type="text" name="name" value="文本框" />
+        <input type="button" name="name" value="我骄傲" />
+    </div>
+</body>
+</html>

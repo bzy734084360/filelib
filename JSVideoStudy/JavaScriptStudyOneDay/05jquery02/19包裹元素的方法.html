@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //每个P标签都会用一堆font标签包裹上。如果所有的p标签都是一个效果，那么
+                //就只需要一对font 标签就足够了
+                //$('div p').wrap('<font color="blue" size="7" face="宋体"></font>')
+                //所有的P标签都被一对font 标签包裹了。
+                //$('div p').wrapAll('<font color="blue" size="7" face="宋体"></font>')
+                //在P标签内包裹内容 用一对font标签包住，但是P标签在外面。每个P标签都有一对font 标签
+                $('div p').wrapInner('<font color="blue" size="7" face="宋体"></font>')
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="变" id="btn" />
+    <div style="width:300px;height:200px;border:1px solid red">
+        <p>
+            这是P
+        </p>
+
+        <p>
+            这也是P
+        </p>
+    </div>
+</body>
+</html>

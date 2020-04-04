@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btn').click(function () {
+                //相当于dom中的innerHTML
+                //插入html元素
+                //$('div').html('<font color="red">我又活了</font>');
+                //插入文本内容
+                //$('div').text('<font color="red">我又活了</font>');
+                //按钮选中checkbox
+                //$('div input[type=checkbox]')
+                //$(':checkbox')
+                //($('#ck')[0]).checked = true;
+                //一般 写两个值，属性和属性值 如果只写了一个属性，那么获取的是改属性的值。
+                //写了两个表示设置该属性的值
+                $('#ck').attr('checked', true);
+                //设置样式
+                $('div').attr('class', 'cls');
+                //移除属性
+                $('div').removeAttr('属性的名字');
+            });
+        });
+    </script>
+    <style>
+        .cls {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" name="name" value="设置和获取" id="btn" />
+    <div style="width:300px; height:150px; border:1px solid red">
+        <input type="checkbox" name="name" value="1" id="ck" />打铅球
+    </div>
+</body>
+</html>

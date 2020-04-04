@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+
+                //获取昵称 +获取内容
+                var name = $('#txt').val();
+                var tt = $('#textContent').val();
+                //创建行 和单元格 ，加到表中
+
+                $('<tr><td>' + name + '</td><td>' + tt + '</td></tr>').appendTo($('#tb'));
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <table id="tb" border="1">
+        <tr>
+            <td>猫猫：</td>
+            <td>沙发耶！</td>
+        </tr>
+    </table>
+    <br />
+    昵称：<input type="text" id="txt" value="" />
+    <br />
+    <textarea id="textContent" rows="10" cols="15"></textarea>
+    <br />
+    <input type="button" value="评论" id="btn1" />
+</body>
+</html>
