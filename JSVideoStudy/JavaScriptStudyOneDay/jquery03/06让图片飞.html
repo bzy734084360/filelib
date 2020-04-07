@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $(document).mousemove(function (e) {
+                //$('#im').css('position', 'absolute').css('left', e.pageX).css('top', e.pageY);
+                $('#im').css('position', 'absolute').css({ "left": e.pageX, "top": e.pageY });
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="img/2.gif" id="im" />
+</body>
+</html>

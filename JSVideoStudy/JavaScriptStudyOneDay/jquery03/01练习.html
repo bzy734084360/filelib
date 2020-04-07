@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="JQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            $('#btnAll').click(function () {
+                $(':checkbox').attr('checked', true);
+            });
+            $('#btnNoAll').click(function () {
+                $(':checkbox').attr('checked', false);
+            });
+            $('#btnFx').click(function () {
+                $('div :checkbox').each(function (index, ele) {
+                    $(ele).attr('checked', !$(ele).attr('checked'));
+                })
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" name="name" value="全选" id="btnAll" />
+    <input type="button" name="name" value="全不选" id="btnNoAll" />
+    <input type="button" name="name" value="反选" id="btnFx" />
+    <div>
+        <input type="checkbox" name="name" value="1" />A
+        <input type="checkbox" name="name" value="2" />B
+        <input type="checkbox" name="name" value="3" />C
+        <input type="checkbox" name="name" value="4" />D
+        <input type="checkbox" name="name" value="5" />E
+    </div>
+</body>
+</html>
