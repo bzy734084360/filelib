@@ -5,9 +5,11 @@
     <title></title>
     <script type="text/javascript">
         //转换int类型数据
-        //var n = '78'; 78
-        //var n = '78asdasd';  78 会扣除后面非数字部分
-        //var n = 'sss78asdasd';
+        //var n = '078';//78 
+        //var n = '078asdasd'; // 78 会扣除后面非数字部分
+        //var n = 'sss78asdasd';// NaN  非数字
+        //alert(parseInt(n));
+        //alert(isNaN(n));
         //此时的624位八进制的值
         //var n = '624';
         //把字符串类型转换为数字类型
@@ -19,37 +21,47 @@
         //var n = '98.4.5.8.9';//99.4
         //alert(parseFloat(n)+1);
         //var n = '85asd';
-        ////有点严格
+        //有点严格
         //alert(Number(n) + 10);
+
         //判断是否为数字
         //var n = 'fsf';
-        //NaN 不能用逻辑运算符判断
+
+        ////NaN 不能用逻辑运算符判断
         //if (Number(n) == NaN) {
         //    alert('不能用');
         //} else {
         //    alert('能用');
         //}
+
         //判断是否为NaN
         //if (isNaN(Number(n))) {
         //    alert('不能用');
         //} else {
         //    alert('能用');
         //}
+
+        //转换字符串
+        //var n = 100;
+        //alert(String(n));
+        //alert(isNaN(String(n)));
+
         //转换Boolean
         //数字转bool类型 非0就是true，0就是false;
         //alert(Boolean(0));
         //字符串转换bool类型 非空字符串为true，空字符串为false；
         //alert(Boolean('asd'));
+
         //弹出内容的方式：
         //alert
         //alert('您好');
         //eval //效率低下避免使用
         //eval("alert('您好')");
-        var sum = 0;
-        for (var i = 0; i < 5; i++) {
-            sum += i;
-        }
-        alert(sum);
+        //var sum = 0;
+        //for (var i = 0; i < 5; i++) {
+        //    sum += i;
+        //}
+        //alert(sum);
     </script>
 </head>
 <body>
